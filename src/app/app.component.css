@@ -1,0 +1,30 @@
+.mainhead{
+    display: flex;
+    margin: 20px auto;
+    border: 9px outset aqua ;
+    background-color: antiquewhite;
+    width: 350px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: -20px;
+}
+
+.navpanel{
+        overflow: auto;
+        background-color: rgb(11, 121, 75);
+        width: 85%;
+        margin: auto;
+}
+
+.navpanel a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    height: 30px;
+}

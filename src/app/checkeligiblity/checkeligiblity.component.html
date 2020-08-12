@@ -1,0 +1,29 @@
+<div>
+    <br><a ng-class="{'adisabled': !elig}" routerLink='{{route}}' class='applyloan' type='button'>Apply for Loan</a>&nbsp;
+</div>
+
+<div>Vehicle Details<tr>
+    <input type="text" placeholder="Car Make"/>
+    <input type="text" placeholder="Car Model"/>
+    <input type="text" placeholder="Ex-Showroom Price"/>
+    <input type="text" placeholder="On-Road Price"/>
+</tr>
+</div>
+<div>Application Details<tr>
+    <input type="text" placeholder="Name"/>
+    <input type="text" placeholder="Age"/>
+    <input type="text" placeholder="Gender"/>
+    <input type="text" placeholder="Type of Employment"/>
+    <input type="text" placeholder="Yearly Salary"/>
+    <input type="text" placeholder="Existing EMI"/>
+</tr>
+</div>
+<div>Contact Details<tr>
+        <input type="text" placeholder="Name"/>
+        <input type="text" placeholder="Age"/>
+</tr>
+</div>
+<div>
+    <br><button (click)=checkeligiblity()>Check Eligiblity</button>&nbsp;
+    {{stat}}
+</div>

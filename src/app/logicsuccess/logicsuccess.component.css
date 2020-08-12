@@ -1,0 +1,18 @@
+.tophead{
+    margin-left: 115px;
+    width: 200px;
+}
+
+div{
+    border:1px solid blue;
+    padding:7px;
+    width:200px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+div.settings{
+    position: relative;
+    right: -540px;
+    top: -40px;
+}
