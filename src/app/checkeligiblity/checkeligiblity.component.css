@@ -1,10 +1,33 @@
 .applyloan{
     background-color: teal;
     color: whitesmoke;
-    padding: 2px;
+    padding: 7px;
     text-decoration: none;
     float: right;
-    margin-right: 115px;
+    margin-right: 1em;
     border-radius: 5px;
+}
+
+.all{
+    background-color: whitesmoke;
+    width: 85%;
+    height: 380px;
+    box-shadow: 1px 1px 2.5px 2.5px #ccc;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.checkeligiblity{
+    background-image: linear-gradient(to right, #2cade9 0%, #387ece 51%, #2760ca 100%);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px darkblue;
+    margin-top: 2.5em;
+    margin-left: 40em;
+    color: white;
     padding: 5px;
+    width: 13em;
+    height: 3em;
 }

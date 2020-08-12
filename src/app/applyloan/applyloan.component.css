@@ -2,7 +2,17 @@ div{
     border:1px solid blue;
     padding:10px;
     width:100px;
-    margin: 10px auto;
+}
+
+div.all{
+    background-color: whitesmoke;
+    width: 84%;
+    height: 500px;
+    box-shadow: 1px 1px 2.5px 2.5px #ccc;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .applynow{
@@ -15,4 +25,14 @@ div{
     margin-left: 20px;
     position: sticky;
     left: 750px;
+}
+
+.mainhead{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5em;
+}
+
+.subhead{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 7.2em;
 }

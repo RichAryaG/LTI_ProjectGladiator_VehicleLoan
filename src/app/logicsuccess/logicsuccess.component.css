@@ -1,6 +1,14 @@
 .tophead{
     margin-left: 115px;
     width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px darkgreen;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(11, 121, 75);
+    
 }
 
 div{
@@ -9,6 +17,7 @@ div{
     width:200px;
     margin: 10px auto;
     text-align: center;
+    border-radius: 5px;
 }
 
 div.settings{
