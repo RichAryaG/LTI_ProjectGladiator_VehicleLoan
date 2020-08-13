@@ -1,13 +1,8 @@
-div{
-    border:1px solid blue;
-    padding:10px;
-    width:100px;
-}
-
-div.all{
+.all{
+    overflow: hidden;
     background-color: whitesmoke;
     width: 84%;
-    height: 500px;
+    height: 480px;
     box-shadow: 1px 1px 2.5px 2.5px #ccc;
     margin: auto;
     margin-top: 20px;
@@ -16,23 +11,47 @@ div.all{
 }
 
 .applynow{
-    margin: 40px auto;
-    position: sticky;
-    left: 650px;
+    margin: 4em;
+    background-image: linear-gradient(to top, #27c53c 0%, #26a831 51%, #186b1f 100%);
+    color: whitesmoke;
+    margin-left: -5em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px ridge rgba(18, 153, 18, 0.658);
+    padding: 8px;
+    position: relative;
+    top: 1em;
+    left: 33.5em;
+    display: block;
+    width: 15em;
+    text-align: center;
 }
 
 .emischeduler{
-    margin-left: 20px;
-    position: sticky;
-    left: 750px;
+    margin: 4em;
+    background-image: linear-gradient(to top, #27c53c 0%, #26a831 51%, #186b1f 100%);
+    color: whitesmoke;
+    margin-left: -5em;
+    text-decoration: none;
+    border: 3px ridge rgba(18, 153, 18, 0.658);
+    border-radius: 5px;
+    padding: 8px;
+    position: relative;
+    top: -5.8em;
+    left: 54em;
+    display: block;
+    width: 15em;
+    text-align: center;
 }
 
 .mainhead{
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 5em;
+    margin-left: 28em;
+    font-weight: 900;
 }
 
 .subhead{
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 7.2em;
+    margin-left: 38.5em;
+    font-weight: 800;
 }
