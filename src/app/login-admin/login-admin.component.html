@@ -1,5 +1,12 @@
-<div>
-    <br><input type="text" class="adminlogin" placeholder="Admin Username"/><br>
-    <input type="password" class="adminpass" placeholder="Admin Password"/>
-    <a routerLink='/adminloginsuccess' class='adminloginsuccess' type='button'>Login</a><br><br><br><br>
+<div class="container">
+    <div class="row">
+        <h1 class = "text" style = "font-size: 25px;">New Wheels! Admin Login</h1>
+        <hr style = "width:70%">
+        <p class = "text" style = "color: grey; font-size: 12px;">Login with valid username and password to access.<p> <br>
+
+        <input type = "text" name = "username" placeholder = " Admin Username" required> <br>
+        <input type = "password" name = "password" placeholder = "Admin Password" required> <br> 
+        <a routerLink='/adminloginsuccess' class = "btn login">Login</a><br><br>
+        <a routerLink='/login' class='btn' type='button'>Back</a>
+    </div>
 </div>

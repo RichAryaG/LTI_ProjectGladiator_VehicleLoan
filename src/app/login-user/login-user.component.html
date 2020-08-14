@@ -1,5 +1,12 @@
-<div>
-    <br><input type="text" class="userlogin" placeholder="Username"/>
-    <br><input type="password" class="userpass" placeholder="Password"/><br>
-    <br><a routerLink='/loginsuccess' class='loginsuccess' type='button'>Login</a><br><br><br>
+<div class="container">
+    <div class="row">
+        <h1 class = "text" style = "font-size: 25px;">Welcome to New Wheels!</h1>
+        <hr style = "width:70%">
+        <p class = "text" style = "color: grey; font-size: 12px;">Enter your details to log-in.<p> <br>
+
+        <input type = "text" name = "username" placeholder = "Username" required> <br>
+        <input type = "password" name = "password" placeholder = "Password" required> <br> 
+        <a routerLink='/loginsuccess' class = "btn login">Login</a><br><br>
+        <a routerLink='/login' class='btn' type='button'>Back</a>
+    </div>
 </div>

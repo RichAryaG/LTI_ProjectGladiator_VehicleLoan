@@ -17,13 +17,9 @@ const routes: Routes = [
   {path: 'adminloginsuccess', component: AdminlogicsuccessComponent},
   {path: 'checkeligiblity', component: CheckeligiblityComponent},
   {path: 'applyloan', component: ApplyloanComponent},
-  {path: 'login', component: LoginComponent,
-    children:[
-      {path: '', redirectTo: '/login', pathMatch: 'full'},
-      {path: 'admin', component: LoginAdminComponent},
-      {path: 'user', component: LoginUserComponent},
-    ]
-  },
+  {path: 'login', component: LoginComponent},
+  {path: 'admin', component: LoginAdminComponent},
+  {path: 'user', component: LoginUserComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 

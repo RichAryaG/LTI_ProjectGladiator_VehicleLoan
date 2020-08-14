@@ -1,8 +1,8 @@
 .navpanel{
         overflow: auto;
-        background-color: #0b794b;
+        background-color: #415e4c;
         width: 100%;
-        margin: auto;
+        margin-left: auto;
 }
 
 .navpanel a{
@@ -16,6 +16,7 @@
 }
 
 .navpanel a:hover {
-    background-color: #075233;
+    background-color: #304538;
     
   }
+
