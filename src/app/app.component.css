@@ -1,7 +1,8 @@
 .navpanel{
-        overflow: auto;
+        overflow: hidden;
         background-color: #415e4c;
         width: 100%;
+        height: 5em;
         margin-left: auto;
 }
 
@@ -9,9 +10,9 @@
     float: right;
     color: white;
     display: block;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, sans-serif;
     text-align: center;
-    padding: 24px 26px;
+    padding: 26px 26px;
     text-decoration: none;
 }
 

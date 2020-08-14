@@ -9,6 +9,7 @@ import { LogicsuccessComponent } from './logicsuccess/logicsuccess.component';
 import { AdminlogicsuccessComponent } from './adminlogicsuccess/adminlogicsuccess.component';
 import { CheckeligiblityComponent } from './checkeligiblity/checkeligiblity.component';
 import { ApplyloanComponent } from './applyloan/applyloan.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'checkeligiblity', component: CheckeligiblityComponent},
   {path: 'applyloan', component: ApplyloanComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'registration', component: RegistrationComponent},
   {path: 'admin', component: LoginAdminComponent},
   {path: 'user', component: LoginUserComponent},
   {path: '**', component: PageNotFoundComponent}

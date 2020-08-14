@@ -12,6 +12,7 @@ import { LogicsuccessComponent } from './logicsuccess/logicsuccess.component';
 import { AdminlogicsuccessComponent } from './adminlogicsuccess/adminlogicsuccess.component';
 import { CheckeligiblityComponent } from './checkeligiblity/checkeligiblity.component';
 import { ApplyloanComponent } from './applyloan/applyloan.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ApplyloanComponent } from './applyloan/applyloan.component';
     LogicsuccessComponent,
     AdminlogicsuccessComponent,
     CheckeligiblityComponent,
-    ApplyloanComponent
+    ApplyloanComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
