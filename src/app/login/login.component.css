@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sanswght@600&display=swap');
 
 .text {
   text-align:center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #233329;
 }
 .container {
@@ -27,7 +27,7 @@ input,
   display: inline-block;
   font-size: 17px;
   line-height: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   text-decoration: none; /* remove underline from anchors */
 }

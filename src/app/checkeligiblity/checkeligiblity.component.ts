@@ -12,7 +12,7 @@ export class CheckeligiblityComponent {
   checkeligiblity(){
     if(this.elig==false)
     {
-      this.stat="User is eligible !";
+      this.stat="USER IS ELIGIBLE!";
       this.elig=true;
       this.route="/applyloan";
     }

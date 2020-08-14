@@ -1,34 +1,44 @@
-<div class="all"> 
-    <div>
-        <br><a routerLink='{{route}}' class='applyloan' type='button'>Apply for Loan</a>&nbsp;
+<div class = "container">
+    <a routerLink = '{{route}}' class = "btn" style = "font-size: 13px; text-align: right; width: 80%;">Apply for Loan</a>
+    <h1 class = "text" style = "font-size: 30px; text-align: center; font-weight: 600;">Check Loan Eligibility</h1>
+    <p class = "text" style = "color: grey; font-size: 12px; text-align: center;">Enter your details to check your eligibility for the loan.<p><br> 
+        
+    <div class = "row">
+        <p class="text" style = "color: #5f866e; font-weight:600; letter-spacing: 1px;"> Enter the Vehical Detail </p>
+        <input type = "text" style = "width: 43%;" placeholder = "Car Make"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder="Car Model"/> <br>
+        <input type = "text" style = "width: 43%;" placeholder = "Ex-Showroom Price"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder="On-Road Price"/> <br> <br>
+        
+        <hr style = "height: 2px; border: 0; background-color: rgb(214, 214, 214);">
+        <br>
+
+        <p class="text" style = "color: #5f866e; font-weight:600; letter-spacing: 1px;"> Enter the Applicant Detail </p>
+
+        <input type = "text" style = "width: 43%;" placeholder = "First Name"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Last Name"/> <br>
+        <input type = "text" style = "width: 43%;" placeholder = "Age"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Gender"/>
+        <input type = "text" style = "width: 43%;" placeholder = "Type of Employment"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Yearly Salary in LPA"/>
+        <input type = "text" style = "width: 43%;" placeholder = "Existing EMI"/> <br> <br>
+
+        <hr style = "height: 2px; border: 0; background-color: rgb(214, 214, 214);">
+        <br>
+
+        <p class="text" style = "color: #5f866e; font-weight:600; letter-spacing: 1px;"> Enter the Contact Detail </p>
+
+        <input type = "text" style = "width: 43%;" placeholder = "Mobile Number"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Email"/> <br> <br> <br>
+
     </div>
-    <b>
-    <div>Vehicle Details<tr><br>
-        <input type="text" placeholder="Car Make"/>&nbsp;
-        <input type="text" placeholder="Car Model"/>&nbsp;
-        <input type="text" placeholder="Ex-Showroom Price"/>&nbsp;
-        <input type="text" placeholder="On-Road Price"/><br><br><br>
-    </tr>
-    </div>
-    <div>Application Details<tr><br>
-        <input type="text" placeholder="Name"/>&nbsp;
-        <input type="text" placeholder="Age"/>&nbsp;
-        <input type="text" placeholder="Gender"/>&nbsp;
-        <input type="text" placeholder="Type of Employment"/>&nbsp;
-        <input type="text" placeholder="Yearly Salary"/>&nbsp;
-        <input type="text" placeholder="Existing EMI"/><br><br><br>
-    </tr>
-    </div>
-    <div>Contact Details<tr><br>
-            <input type="text" placeholder="Mobile Number"/>&nbsp;
-            <input type="text" placeholder="Email"/>
-    </tr>
-    </div>
-    </b>
-    <div>
-        <button class='checkeligiblity' (click)=checkeligiblity()>Check Eligiblity</button>&nbsp;
-        {{stat}}
-    </div>
-    <br>
-    <span class="warning">**Check Eligiblity Before Applying for Loan</span>
+
+    <a class = "submit login" (click)=checkeligiblity()> Check Eligibility </a> <br>
+    <p class = "text" style = "color: rgb(68, 68, 68); font-size: 15px; font-weight:600; text-align: center; letter-spacing: 2px;"> {{stat}} </p> <br>
+
+    <span style = "color: rgb(156, 51, 51);"> **Please check your eligiblity before applying for Loan!</span>
 </div>
+
+
+
+
