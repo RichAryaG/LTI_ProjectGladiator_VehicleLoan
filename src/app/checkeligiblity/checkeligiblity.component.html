@@ -3,26 +3,23 @@
     <h1 class = "text" style = "font-size: 30px; text-align: center; font-weight: 600;">Check Loan Eligibility</h1>
     <hr style="width: 50%;">
     <p class = "text" style = "color: grey; font-size: 12px; text-align: center;">Enter your details to check your eligibility for the loan.<p><br> 
-        
-    <div class = "row">
+    <form (ngSubmit)=checkeligiblity() ngNativeValidate>
+        <div class = "row">
         <p class="text" style = "color: #5f866e; font-weight:600; letter-spacing: 1px;"> Enter the Vehical Detail </p>
-        <input type = "text" style = "width: 43%;" placeholder = "Car Make"/>
-        <input type = "text" style = "width: 43%; float:right;" placeholder="Car Model"/> <br>
+        <input type = "text" style = "width: 43%;" placeholder = "Vehicle Make"/>
+        <input type = "text" style = "width: 43%; float:right;" placeholder="Vehicle Model"/> <br>
         <input type = "text" style = "width: 43%;" placeholder = "Ex-Showroom Price"/>
-        <input type = "text" style = "width: 43%; float:right;" placeholder="On-Road Price"/> <br> <br>
-        
-        <hr style = "height: 2px; border: 0; background-color: rgb(214, 214, 214);">
-        <br>
-
+        <input type = "text" style = "width: 43%; float:right;" placeholder="On-Road Price" [(ngModel)]="onroadprice" required/> <br> <br>     
+        <hr style = "height: 2px; border: 0; background-color: rgb(214, 214, 214);"><br>
         <p class="text" style = "color: #5f866e; font-weight:600; letter-spacing: 1px;"> Enter the Applicant Detail </p>
-
         <input type = "text" style = "width: 43%;" placeholder = "First Name"/>
         <input type = "text" style = "width: 43%; float:right;" placeholder = "Last Name"/> <br>
         <input type = "text" style = "width: 43%;" placeholder = "Age"/>
         <input type = "text" style = "width: 43%; float:right;" placeholder = "Gender"/>
         <input type = "text" style = "width: 43%;" placeholder = "Type of Employment"/>
-        <input type = "text" style = "width: 43%; float:right;" placeholder = "Yearly Salary in LPA"/>
-        <input type = "text" style = "width: 43%;" placeholder = "Existing EMI"/> <br> <br>
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Monthly Savings (Ex:- 10000)" [(ngModel)]="monthlysavings" required/>
+        <input type = "text" style = "width: 43%;" placeholder = "Existing EMI" [(ngModel)]="existingemi" required/> 
+        <input type = "text" style = "width: 43%; float:right;" placeholder = "Loan Tenure" [(ngModel)]="loantenure" required/><br> <br>
 
         <hr style = "height: 2px; border: 0; background-color: rgb(214, 214, 214);">
         <br>
@@ -31,12 +28,11 @@
 
         <input type = "text" style = "width: 43%;" placeholder = "Mobile Number"/>
         <input type = "text" style = "width: 43%; float:right;" placeholder = "Email"/> <br> <br> <br>
-
-    </div>
-
-    <a class = "submit login" (click)=checkeligiblity()> Check Eligibility </a> <br>
-    <p class = "text" style = "color: rgb(68, 68, 68); font-size: 15px; font-weight:600; text-align: center; letter-spacing: 2px;"> {{stat}} </p> <br>
-
+    
+        </div>
+    <button type="submit" class='btn submit'>Login</button><br><br>
+    <p class = "text" style = "color: rgb(68, 68, 68); font-size: 15px; font-weight:600; text-align: center; letter-spacing: 2px;"> {{stat}} </p> <br>   
+    </form>
     <span style = "color: rgb(156, 51, 51); float: left; font-size: 11px; margin-left: 30px;"> **Please check your eligiblity before applying for Loan!</span> <br>
 </div>
 

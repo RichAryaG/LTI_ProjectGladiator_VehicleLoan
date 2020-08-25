@@ -9,12 +9,25 @@ export class CheckeligiblityComponent {
   elig: boolean=false;
   route="/checkeligiblity";
   stat:string;
+  onroadprice:number;
+  monthlysavings:number;
+  existingemi:number;
+  loantenure:number;
+  newemi:number = this.onroadprice/this.loantenure;
+  spentnew = this.newemi-this.existingemi;
+
   checkeligiblity(){
-    if(this.elig==false)
+    if (this.spentnew<=this.monthlysavings)
     {
-      this.stat="USER IS ELIGIBLE!";
-      this.elig=true;
-      this.route="/applyloan";
+      if(this.elig==false)
+      {
+        this.stat="USER IS ELIGIBLE!";
+        this.route="/applyloan";
+      }
+    }
+    else
+    {
+      this.stat="SORRY, YOU AREN'T ELIGIBLE!";
     }
   }
 }
