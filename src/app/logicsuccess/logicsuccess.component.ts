@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './logicsuccess.component.html',
   styleUrls: ['./logicsuccess.component.css']
 })
+
 export class LogicsuccessComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(){}
+  userName:string;
+  userId:string;
+  ngOnInit(): void { 
+    this.userName=sessionStorage.getItem('userName');
+    this.userId=sessionStorage.getItem('userId');
   }
-
 }

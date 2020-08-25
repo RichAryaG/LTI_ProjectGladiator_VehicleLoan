@@ -4,10 +4,11 @@
         <h1 class = "text" style = "font-size: 25px;">Welcome to New Wheels!</h1>
         <hr style = "width:70%">
         <p class = "text" style = "color: grey; font-size: 12px;">Enter your details to log-in.<p> <br>
-
-        <input type = "text" name = "username" placeholder = "Username" required> <br>
-        <input type = "password" name = "password" placeholder = "Password" required> <br> 
-        <a routerLink='/loginsuccess' class = "btn login">Login</a><br><br>
-        <a routerLink='/login' class='btn' type='button'>Back</a>
+            <form (ngSubmit)="login()" ngNativeValidate>
+                <input type = "email" name = "email" placeholder = "Email" [(ngModel)]="email" required><br>
+                <input type = "password" name = "password" placeholder = "Password" [(ngModel)]="password" required> <br> 
+                <button type="submit" class='btn login'>Login</button><br><br><br><br>
+                <a routerLink='/login' class='btn' type='button'>Back</a>
+        </form>
     </div>
 </div>

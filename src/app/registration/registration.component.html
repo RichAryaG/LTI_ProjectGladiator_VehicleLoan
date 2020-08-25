@@ -1,1 +1,25 @@
-<p> We will do all the new registrations here! </p>
+<div class="container">
+    <div class="row">
+        <br><br>
+        <h1 class = "text" style = "font-size: 25px;">Welcome to New Wheels!</h1>
+        <hr style = "width:70%">
+        <p class = "text" style = "color: grey; font-size: 12px;">Enter your details to Sign Up!.<p> <br>
+            <form (ngSubmit)="register()" ngNativeValidate>           
+                <input type="text" name="FirstName" placeholder="First Name" [(ngModel)]="userNameFirst" required/><br>
+                <input type="text" name="LastName" placeholder="Last Name" [(ngModel)]="userNameLast"/><br>
+                <input type="text" name="LastName" placeholder="Middle Name" [(ngModel)]="userNameMiddle"/><br>
+                <input type="text" name="email" placeholder="Email" [(ngModel)]="userEmail" required><br>
+                <input type="password" name="password" placeholder="Password" [(ngModel)]="userPass" required/><br>
+                <input type="number" name="Age" placeholder="Age" [(ngModel)]="userAge" required/><br>
+                <select type="text" name="gender"  class="gender" [(ngModel)]="userGender " required>
+                    <option selected disabled hidden style='display: none' value=''>Please select a Gender: </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select><br>
+                <input type="text" name="Address" placeholder="Address" [(ngModel)]="userAddress" required/><br>
+                <input type="text" name="Zip" placeholder="Zip" [(ngModel)]="userZip" required/><br><br><br>
+                <button class="btn register">Register</button><br><br>
+        </form>
+    </div>
+</div>
