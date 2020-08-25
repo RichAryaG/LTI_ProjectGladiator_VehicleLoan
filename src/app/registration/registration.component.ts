@@ -37,11 +37,17 @@ export class RegistrationComponent {
 
     this.service.register(user).subscribe(
       user=>{
-        console.log(user)
-        this.router.navigate(['login'])
-      }
+        if(user.status=='SUCCESS')
+        {
+          console.log(user)
+          alert("New User Registered !!");
+          this.router.navigate(['login'])
+        }
+        else
+        {
+          alert("User Already Exists !!");
+        }
+    }
     )
-
-
   }
 }
