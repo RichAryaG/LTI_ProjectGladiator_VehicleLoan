@@ -16,7 +16,7 @@
 } 
 
 /* style inputs and link buttons */
-.btn {
+input .btn {
   width: 60%;
   padding: 20px;
   border: none;

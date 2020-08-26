@@ -3,14 +3,31 @@
         <div>
         <h1 class = "text" style = "font-size: 30px; text-align: center; font-weight: 600;">Apply for Loan</h1>
         <hr style = "width:50%">
-        <p class = "text" style = "color: grey; font-size: 12px; text-align: center;">New Car Loans (Product Type)</p>
+        <p class = "text" style = "color: grey; font-size: 12px; text-align: center;">New Vehicles Loans (Product Type)</p>
         <br>
-        <a class = "btn login">Loan Amount</a> <br>
-        <a class = "btn login">Best Amount</a> <br>
-        <a class = "btn login">EMI </a> <br>
-        <a class = "btn login">Processing Fee</a> <br>
-        <a class = "btn login">Interest Rate</a> <br>
-        <a class = "btn login">Account Type</a> <br>
+                <input type="number" name="interestRate" placeholder="Interest Rate" [(ngModel)]="interestRate" required><br>
+                <input type="number" name="loanAmount" placeholder="Loan Amount" [(ngModel)]="loanAmount" required/><br>
+                <select type="number" name="tenure"  class="tenure" [(ngModel)]="tenure" required><br>
+                    <option selected disabled hidden style='display: none' value='undefined'>Needed Repayment Time: </option>
+                    <option value="male">6</option>
+                    <option value="female">12</option>
+                    <option value="others">24</option>
+                    <option value="others">36</option>
+                    <option value="others">48</option>
+                    <option value="others">60</option>
+                    <option value="others">72</option>
+                    <option value="others">84</option>
+                </select><br>
+                <select type="number" name="loantype"  class="loantype" [(ngModel)]="loantype" required><br>
+                    <option selected disabled hidden style='display: none' value='undefined'>Please select your Gender: </option>
+                    <option value="2">Two-Wheeler</option>
+                    <option value="3">Three-Wheeler</option>
+                    <option value="4">Four-Wheeler</option>
+                </select><br>
+                <p>EMI: {{emi}}</p>
+                <input type="text" name="loanStatus" placeholder="Loan Status" [(ngModel)]="loanStatus" required/><br>
+                <input type="text" name="processingFee" placeholder="Processing Fee" [(ngModel)]="processingFee" required/><br><br><br>
+                <button class="btn register">Register</button><br><br>
         </div>
     </div>
     <div style="margin-top: 30px;"> </div>
