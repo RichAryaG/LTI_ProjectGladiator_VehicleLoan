@@ -62,14 +62,12 @@ export class UserService {
 
     }
 
-<<<<<<< HEAD
     viewAll():Observable<UserList[]>
     {
       
         return this.http.get<UserList[]>("http://localhost:8181/viewallusers")
 
     }
-=======
     // adminViewAllUsers()
     // {
 
@@ -79,6 +77,5 @@ export class UserService {
 
 
 
->>>>>>> c316b9cfde08be636de9c2036c50f12bd1e82b31
 
   }
