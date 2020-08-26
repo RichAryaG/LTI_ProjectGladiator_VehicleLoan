@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../UserService';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view-application',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewApplicationComponent implements OnInit {
 
-  constructor() { }
+  public AllPendingUserList =[];
 
-  ngOnInit(): void {
-  }
+  constructor (private service:UserService, private router:Router) { }
+  
+  ngOnInit() {
+    this.service.viewPending()
+    .subscribe(data => this.AllPendingUserList = data);
 
+}
 }

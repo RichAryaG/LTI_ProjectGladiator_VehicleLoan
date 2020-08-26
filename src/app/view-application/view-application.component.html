@@ -1,1 +1,5 @@
-<p>view-application works!</p>
+<h2>Pending User List </h2>
+<ul *ngFor = "let user of AllPendingUserList">
+    <li>{{user.loanId}}</li>
+    <li>{{user.applicationStatus}}</li>
+</ul>
