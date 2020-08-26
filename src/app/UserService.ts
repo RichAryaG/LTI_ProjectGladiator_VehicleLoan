@@ -68,14 +68,5 @@ export class UserService {
         return this.http.get<UserList[]>("http://localhost:8181/viewallusers")
 
     }
-    // adminViewAllUsers()
-    // {
-
-    //   return this.http.post("http://localhost:8181/viewallusers", admin)
-
-    // }
-
-
-
 
   }
