@@ -19,6 +19,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { AccountRegisterComponent } from './account-register/account-register.component';
 import { VehicleRegisterComponent } from './vehicle-register/vehicle-register.component';
 import { LoanregisterComponent } from './loanregister/loanregister.component';
+import { ViewAllUsersComponent } from './view-all-users/view-all-users.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LoanregisterComponent } from './loanregister/loanregister.component';
     CheckeligiblityuserComponent,
     RegistrationComponent,
     AccountRegisterComponent,
-    VehicleRegisterComponent
+    VehicleRegisterComponent,
+    ViewAllUsersComponent
   ],
   imports: [
     BrowserModule,
