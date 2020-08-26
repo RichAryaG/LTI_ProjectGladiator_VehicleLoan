@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../UserService';
-import { Router } from '@angular/router';
+import {UserService} from '../UserService';
 import { Account } from '../account';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-account-register',
   templateUrl: './account-register.component.html',
   styleUrls: ['./account-register.component.css']
 })
-export class AccountRegisterComponent {
 
+export class AccountRegisterComponent{
   constructor(private service:UserService, private router:Router) { }
-  
 
   accountNumber:any;
   bankName:any;
@@ -34,6 +33,7 @@ export class AccountRegisterComponent {
     account.userEmployment=this.userEmployment;
     account.monthlySavings=this.monthlySavings;
 
+
     this.service.registerAccount(account).subscribe(
       account=>{
         if(account.status=='SUCCESS')
@@ -50,3 +50,6 @@ export class AccountRegisterComponent {
     )
   }
 }
+
+
+

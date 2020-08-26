@@ -8,4 +8,5 @@ export class Account
   existingEmi:any;
   userEmployment:any;
   monthlySavings:any;
+  
 }
