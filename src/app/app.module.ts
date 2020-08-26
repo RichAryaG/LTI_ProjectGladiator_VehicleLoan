@@ -14,10 +14,11 @@ import { LoginUserComponent } from './login-user/login-user.component';
 import { LogicsuccessComponent } from './logicsuccess/logicsuccess.component';
 import { AdminlogicsuccessComponent } from './adminlogicsuccess/adminlogicsuccess.component';
 import { CheckeligiblityComponent } from './checkeligiblity/checkeligiblity.component';
-import { ApplyloanComponent } from './applyloan/applyloan.component';
+import { CheckeligiblityuserComponent } from './checkeligiblityuser/checkeligiblityuser.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AccountRegisterComponent } from './account-register/account-register.component';
 import { VehicleRegisterComponent } from './vehicle-register/vehicle-register.component';
+import { LoanregisterComponent } from './loanregister/loanregister.component';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,10 @@ import { VehicleRegisterComponent } from './vehicle-register/vehicle-register.co
     LoginAdminComponent,
     LoginUserComponent,
     LogicsuccessComponent,
+    LoanregisterComponent,
     AdminlogicsuccessComponent,
     CheckeligiblityComponent,
-    ApplyloanComponent,
+    CheckeligiblityuserComponent,
     RegistrationComponent,
     AccountRegisterComponent,
     VehicleRegisterComponent

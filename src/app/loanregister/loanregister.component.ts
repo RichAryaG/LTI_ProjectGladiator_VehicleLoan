@@ -2,17 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Router} from "@angular/router";
 
 @Component({
-  selector: 'app-logicsuccess',
-  templateUrl: './logicsuccess.component.html',
-  styleUrls: ['./logicsuccess.component.css']
+  selector: 'app-loanregister',
+  templateUrl: './loanregister.component.html',
+  styleUrls: ['./loanregister.component.css']
 })
-
-export class LogicsuccessComponent implements OnInit {
+export class LoanregisterComponent implements OnInit {
   constructor(private router:Router) { }
-  userName:string;
   userId:string;
-  ngOnInit(): void { 
-    this.userName=sessionStorage.getItem('userName');
+  ngOnInit(): void {
     this.userId=sessionStorage.getItem('userId');
     if(this.userId==null)
     {

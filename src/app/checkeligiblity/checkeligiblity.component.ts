@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckeligiblityComponent {
   elig: boolean=false;
-  route="/checkeligiblity";
   stat:string;
   onroadprice:number;
   monthlysavings:number;
@@ -21,7 +20,6 @@ export class CheckeligiblityComponent {
       if(this.elig==false)
       {
         this.stat="USER IS ELIGIBLE!";
-        this.route="/applyloan";
         alert(this.stat);
       }
     }
