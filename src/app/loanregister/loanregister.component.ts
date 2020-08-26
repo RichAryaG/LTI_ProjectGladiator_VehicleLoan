@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router} from "@angular/router";
 import { UserService } from "../UserService";
 import { Loan } from '../Loan';
+import {formatDate} from '@angular/common';
 
 @Component({
   selector: 'app-loanregister',
@@ -28,21 +29,21 @@ export class LoanregisterComponent implements OnInit {
     loan.applicationStatus="Pending";
     loan.interestRate=this.interestRate;
     loan.loanAmount=this.loanAmount;
-    loan.loanEndDate="2021-12-12";
-    loan.loanStartDate="2018-12-12";
+    loan.loanEndDate=new Date(new Date().setMonth(new Date().getMonth() + Number(this.tenure)));
+    loan.loanStartDate=formatDate(new Date(), 'yyyy-MM-dd', 'en');
     loan.loanStatus=this.loanStatus;
     loan.processingFee=this.processingFee;
     loan.tenure=this.tenure;
     loan.emi=(this.loanAmount/this.tenure);
     loan.loantype=this.loantype;
-
+    console.log(this.tenure);
     this.service.registerloan(loan).subscribe(
       loan=>{
         if(loan.status=='SUCCESS')
         {
           console.log(loan)
           alert("New Loan Registered !!");
-          this.router.navigate(['user'])
+          this.router.navigate(['loginsuccess'])
         }
         else
         {

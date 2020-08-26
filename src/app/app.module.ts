@@ -23,6 +23,7 @@ import { ViewAllUsersComponent } from './view-all-users/view-all-users.component
 import { ViewClientsComponent } from './view-clients/view-clients.component';
 import { ViewApplicationComponent } from './view-application/view-application.component';
 import { ViewRejectedComponent } from './view-rejected/view-rejected.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ViewRejectedComponent } from './view-rejected/view-rejected.component';
     ViewAllUsersComponent,
     ViewClientsComponent,
     ViewApplicationComponent,
-    ViewRejectedComponent
+    ViewRejectedComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,

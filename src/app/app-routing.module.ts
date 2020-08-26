@@ -17,6 +17,7 @@ import { ViewAllUsersComponent } from './view-all-users/view-all-users.component
 import { ViewApplicationComponent } from './view-application/view-application.component';
 import { ViewClientsComponent } from './view-clients/view-clients.component';
 import { ViewRejectedComponent } from './view-rejected/view-rejected.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'registration', component: RegistrationComponent},
   {path: 'admin', component: LoginAdminComponent},
+  {path: 'logout', component: LogoutComponent},
   {path: 'user', component: LoginUserComponent},
   {path: 'vehicleregister', component: VehicleRegisterComponent},
   {path: 'accountregister', component: AccountRegisterComponent},

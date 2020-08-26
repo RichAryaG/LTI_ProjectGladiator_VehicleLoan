@@ -44,6 +44,7 @@ export class AccountRegisterComponent{
         else
         {
           alert("Account Already Exists !!");
+          this.router.navigate(['vehicleregister']);
         }
     }
     )
