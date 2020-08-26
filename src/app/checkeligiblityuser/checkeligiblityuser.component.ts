@@ -31,7 +31,7 @@ export class CheckeligiblityuserComponent implements OnInit{
       if(this.elig==false)
       {
         this.stat="USER IS ELIGIBLE!";
-        this.route="/vehicleregister";
+        this.route="/accountregister";
         alert(this.stat);
       }
     }
@@ -39,7 +39,7 @@ export class CheckeligiblityuserComponent implements OnInit{
     {
       this.stat="SORRY, YOU AREN'T ELIGIBLE!";
       alert(this.stat);
-      window.location.reload();
+      this.route="/user";
     }
   }
 }

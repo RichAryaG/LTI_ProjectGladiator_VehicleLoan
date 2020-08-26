@@ -38,6 +38,7 @@ export class VehicleRegisterComponent {
         {
           console.log(vehicle)
           alert("New Vehicle Registered!!");
+          this.router.navigate(['loanregister'])
         }
         else
         {

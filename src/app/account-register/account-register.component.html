@@ -4,20 +4,20 @@
         <h1 class = "text" style = "font-size: 25px;">Welcome to New Wheels!</h1>
         <hr style = "width:70%">
         <p class = "text" style = "color: grey; font-size: 12px;">Enter your Account Details.<p> <br>
-            <form (ngSubmit)="registerAccount()" ngNativeValidate>           
-                <input type="text" name="Account Number" placeholder="Account Number" [(ngModel)]="accountNumber" required/><br>
-                <input type="text" name="Bank Name" placeholder="Bank Name" [(ngModel)]="bankName" required/><br>
-                <input type="text" name="IFSC Number" placeholder="IFSC Number" [(ngModel)]="ifscCode" required/><br>
-                <select type="text" name="Account Type"  class="actype" [(ngModel)]="accountType " required>
+            <form (ngSubmit)="registeraccount()" ngNativeValidate>           
+                <input type="text" name="accNumber" placeholder="Account Number" [(ngModel)]="accNumber" required/><br>
+                <input type="text" name="accBankName" placeholder="Bank Name" [(ngModel)]="accBankName" required/><br>
+                <input type="text" name="accIfsc" placeholder="IFSC Number" [(ngModel)]="accIfsc" required/><br>
+                <select type="text" name="Account Type"  class="actype" [(ngModel)]="accType " required>
                     <option selected disabled hidden style='display: none' value='undefined'>Please select Account Type </option>
                     <option value="Salaried">Salaried</option>
                     <option value="Savings">Savings</option>
                     <option value="Current">Current</option>
                 </select><br>
-                <input type="number" name="Salary" placeholder="Salary" [(ngModel)]="salary" required/><br>
-                <input type="number" name="Existing EMI" placeholder="Existing EMI(in Rupees)" [(ngModel)]="existingEmi" required/><br>
-                <input type="text" name="User Employment" placeholder="User Employment" [(ngModel)]="userEmployment" required/><br>
-                <input type="number" name="Monthly Savings" placeholder="Monthly Savings" [(ngModel)]="monthlySavings" required/><br>
+                <input type="number" name="salary" placeholder="Salary" [(ngModel)]="salary" required/><br>
+                <input type="number" name="exisitingEmi" placeholder="Existing EMI(in Rupees)" [(ngModel)]="exisitingEmi" required/><br>
+                <input type="text" name="userEmployment" placeholder="User Employment" [(ngModel)]="userEmployment" required/><br>
+                <input type="number" name="monthlySavings" placeholder="Monthly Savings" [(ngModel)]="monthlySavings" required/><br>
 
                 <button class="btn registerAccount">Submit Account Details.</button><br><br>
         </form>

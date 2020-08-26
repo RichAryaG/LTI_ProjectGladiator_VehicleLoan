@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from '../UserService';
-import { Account } from '../account';
-import { Router } from "@angular/router";
+import { UserService } from '../UserService';
+import { Accounts } from "../Accounts";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-account-register',
@@ -10,44 +10,43 @@ import { Router } from "@angular/router";
 })
 
 export class AccountRegisterComponent{
-  constructor(private service:UserService, private router:Router) { }
-
-  accountNumber:any;
-  bankName:any;
-  ifscCode:any;
-  accountType:any;
+  constructor (private service:UserService, private router:Router) { }
+  accNumber:any;
+  accBankName:any;
+  accIfsc:any;
+  accType:any;
   salary:any;
-  existingEmi:any;
+  exisitingEmi:any;
   userEmployment:any;
   monthlySavings:any;
 
-  registerAccount()
+  registeraccount()
   {
-    var account=new Account();
-    account.accountNumber=this.accountNumber;
-    account.bankName=this.bankName;
-    account.ifscCode=this.ifscCode;
-    account.accountType=this.accountType;
-    account.salary=this.salary;
-    account.existingEmi=this.existingEmi;
-    account.userEmployment=this.userEmployment;
-    account.monthlySavings=this.monthlySavings;
+    var accounts=new Accounts();
+    accounts.accNumber=this.accNumber;
+    accounts.accBankName=this.accBankName;
+    accounts.accIfsc=this.accIfsc;
+    accounts.accType=this.accType;
+    accounts.salary=this.salary;
+    accounts.exisitingEmi=this.exisitingEmi;
+    accounts.userEmploymentType=this.userEmployment;
+    accounts.monthlySavings=this.monthlySavings;
 
 
-  //   this.service.registerAccount(account).subscribe(
-  //     account=>{
-  //       if(account.status=='SUCCESS')
-  //       {
-  //         console.log(account)
-  //         alert("Account details updated !!");
-  //         this.router.navigate(['register-vehicle'])
-  //       }
-  //       else
-  //       {
-  //         alert("Account Already Exists !!");
-  //       }
-  //   }
-  //   )
+    this.service.registerAccount(accounts).subscribe(
+      account=>{
+        if(account.status=='SUCCESS')
+        {
+          console.log(account)
+          alert("Account details updated !!");
+          this.router.navigate(['vehicleregister'])
+        }
+        else
+        {
+          alert("Account Already Exists !!");
+        }
+    }
+    )
   }
 }
 

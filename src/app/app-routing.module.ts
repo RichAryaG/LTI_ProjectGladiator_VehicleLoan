@@ -27,7 +27,7 @@ const routes: Routes = [
   {path: 'admin', component: LoginAdminComponent},
   {path: 'user', component: LoginUserComponent},
   {path: 'vehicleregister', component: VehicleRegisterComponent},
-  {path: 'account', component: AccountRegisterComponent},
+  {path: 'accountregister', component: AccountRegisterComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 

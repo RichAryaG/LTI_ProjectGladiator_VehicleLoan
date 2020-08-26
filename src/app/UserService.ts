@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Login } from "./loginClass";
 import { Loan } from "./Loan";
 import { Vehicle } from './vehicle';
+import { Accounts } from './Accounts';
 
 
 @Injectable({
@@ -53,10 +54,10 @@ export class UserService {
 
     }
 
-    registerAccount(account:Account):Observable<any>
+    registerAccount(accounts:Accounts):Observable<any>
     {
       
-        return this.http.post("http://localhost:8181/registerAccount",account)
+        return this.http.post("http://localhost:8181/registeraccount",accounts)
 
     }
 
