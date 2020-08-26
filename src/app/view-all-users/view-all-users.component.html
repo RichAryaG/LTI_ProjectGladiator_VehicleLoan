@@ -1,1 +1,5 @@
-<p>view-all-users works!</p>
+<h2>User List </h2>
+<ul *ngFor = "let user of AllUserList">
+    <li>{{user.userId}}</li>
+    <li>{{user.userNameFirst}}</li>
+</ul>

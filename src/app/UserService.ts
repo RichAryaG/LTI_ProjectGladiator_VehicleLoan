@@ -6,6 +6,7 @@ import { Login } from "./loginClass";
 import { Loan } from "./Loan";
 import { Vehicle } from './vehicle';
 import { Accounts } from './Accounts';
+import { UserList } from './UserList';
 
 
 @Injectable({
@@ -58,6 +59,13 @@ export class UserService {
     {
       
         return this.http.post("http://localhost:8181/registeraccount",accounts)
+
+    }
+
+    viewAll():Observable<UserList[]>
+    {
+      
+        return this.http.get<UserList[]>("http://localhost:8181/viewallusers")
 
     }
 
