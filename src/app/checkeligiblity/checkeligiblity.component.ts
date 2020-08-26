@@ -14,20 +14,22 @@ export class CheckeligiblityComponent {
   existingemi:number;
   loantenure:number;
   newemi:number = this.onroadprice/this.loantenure;
-  spentnew = this.newemi-this.existingemi;
 
   checkeligiblity(){
-    if (this.spentnew<=this.monthlysavings)
+    if (((this.onroadprice/this.loantenure)+this.existingemi)<=this.monthlysavings)
     {
       if(this.elig==false)
       {
         this.stat="USER IS ELIGIBLE!";
         this.route="/applyloan";
+        alert(this.stat);
       }
     }
     else
     {
       this.stat="SORRY, YOU AREN'T ELIGIBLE!";
+      alert(this.stat);
+      window.location.reload();
     }
   }
 }
