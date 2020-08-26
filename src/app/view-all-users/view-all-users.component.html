@@ -1,5 +1,35 @@
-<h2>User List </h2>
-<ul *ngFor = "let user of AllUserList">
-    <li>{{user.userId}}</li>
-    <li>{{user.userNameFirst}}</li>
-</ul>
+<div class = "container">
+    <table id = "table" style = "margin:auto; text-align: center;">
+        <tr>
+          <th> INDEX </th>
+          <th> USER ID</th>
+          <th> FIRST NAME </th>
+          <th> LAST NAME </th>
+          <th> AGE </th>
+          <th> GENDER </th>
+          <th> ADDRESS </th>
+          <th> EMAIL </th>
+          <th> ZIP </th>
+          <th> TYPE </th>
+        </tr>
+      <tr *ngFor = "let user of UserList; let index = index;"> 
+        <td> {{index + 1}} </td>
+        <td> {{user.userId}} </td> 
+        <td> {{user.userNameFirst}} </td> 
+        <td> {{user.userNameLast}} </td>
+        <td> {{user.userAge}} </td>
+        <td> {{user.UserGender}} </td>
+        <td> {{user.userAge}} </td>
+        <td> {{user.userAddress}} </td>
+        <td> {{user.userEmail}} </td>
+        <td> {{user.userZip}} </td>
+        <td> {{user.userType}} </td>
+      </tr>
+      </table>
+</div>
+
+
+
+
+
+
