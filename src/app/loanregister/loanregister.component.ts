@@ -42,7 +42,7 @@ export class LoanregisterComponent implements OnInit {
         {
           console.log(loan)
           alert("New Loan Registered !!");
-          this.router.navigate(['home'])
+          this.router.navigate(['user'])
         }
         else
         {
