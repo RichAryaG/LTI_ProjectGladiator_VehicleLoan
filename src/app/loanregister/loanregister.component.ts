@@ -28,8 +28,8 @@ export class LoanregisterComponent implements OnInit {
     loan.applicationStatus="Pending";
     loan.interestRate=this.interestRate;
     loan.loanAmount=this.loanAmount;
-    loan.loanEndDate=this.loanEndDate;
-    loan.loanStartDate=this.loanStartDate;
+    loan.loanEndDate="2021-12-12";
+    loan.loanStartDate="2018-12-12";
     loan.loanStatus=this.loanStatus;
     loan.processingFee=this.processingFee;
     loan.tenure=this.tenure;
@@ -41,12 +41,12 @@ export class LoanregisterComponent implements OnInit {
         if(loan.status=='SUCCESS')
         {
           console.log(loan)
-          alert("New User Registered !!");
-          this.router.navigate(['login'])
+          alert("New Loan Registered !!");
+          this.router.navigate(['home'])
         }
         else
         {
-          alert("User Already Exists !!");
+          alert("Loan Already Exists !!");
         }
     }
     )
