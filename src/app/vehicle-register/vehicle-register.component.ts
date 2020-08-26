@@ -37,7 +37,7 @@ export class VehicleRegisterComponent {
         if(vehicle.status=='SUCCESS')
         {
           console.log(vehicle)
-          alert("New Vehicle Registered !!");
+          alert("New Vehicle Registered!!");
         }
         else
         {

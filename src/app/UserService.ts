@@ -13,31 +13,44 @@ import { Vehicle } from './vehicle';
 export class UserService {
 
   constructor(private http: HttpClient) {  }
+
+    
+
     register(user:User):Observable<any>
     {
+      
         return this.http.post("http://localhost:8181/register",user)
+
+     
     }
 
     login(login:Login):Observable<any>
     {
-        return this.http.post("http://localhost:8181/loginuser",login) 
+      
+        return this.http.post("http://localhost:8181/loginuser",login)
+
+     
     }
 
     loginadmin(adminlogin:Login):Observable<any>
-    { 
+    {
+      
         return this.http.post("http://localhost:8181/loginadmin",adminlogin)
-    }
+
+    }   
 
     registerloan(loan:Loan):Observable<any>
     {
+
       return this.http.post("http://localhost:8181/registerloan",loan)
+
     }
+
     registerVehicle(vehicle:Vehicle):Observable<any>
     {
       
         return this.http.post("http://localhost:8181/vehicleregister",vehicle)
 
-     
     }
 
     registerAccount(account:Account):Observable<any>
@@ -45,7 +58,6 @@ export class UserService {
       
         return this.http.post("http://localhost:8181/registerAccount",account)
 
-     
     }
 
   }
