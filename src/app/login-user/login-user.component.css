@@ -12,7 +12,8 @@
   width: 40%;
   margin: auto;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 130px;
 } 
 
 /* style inputs and link buttons */
@@ -40,20 +41,13 @@ input, .btn {
 .login:hover {
   background-color: #304538;
 }
-/* Two-column layout */
+
+
 .row {
   float: center;
   margin: auto;
   padding: 0 50px;
   margin-top: 6px;
-}
-
-/* bottom container */
-.bottom-container {
-  text-align: center;
-  background-color: #304538;
-  width: 40%;
-  margin: auto;
 }
 
 * {

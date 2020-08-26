@@ -12,7 +12,7 @@
   width: 40%;
   margin: auto;
   text-align: center;
-  margin-top: 130px;
+  margin-top: 40px;
 } 
 
 /* style inputs and link buttons */
@@ -55,6 +55,7 @@ input,
   background-color: #304538;
   width: 40%;
   margin: auto;
+  margin-bottom: 130px;
 }
 
 * {
