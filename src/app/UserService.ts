@@ -7,6 +7,10 @@ import { Loan } from "./Loan";
 import { Vehicle } from './vehicle';
 import { Accounts } from './Accounts';
 import { UserList } from './UserList';
+import { RejectedUserList } from './RejectedUserList';
+import { ApprovedUserList } from './ApprovedUserList';
+import { PendingUserList } from './PendingUserList';
+
 
 
 @Injectable({
@@ -66,6 +70,27 @@ export class UserService {
     {
       
         return this.http.get<UserList[]>("http://localhost:8181/viewallusers")
+
+    }
+
+    viewRejected():Observable<RejectedUserList[]>
+    {
+      
+        return this.http.get<RejectedUserList[]>("http://localhost:8181/viewrejectedusers")
+
+    }
+
+    viewPending():Observable<PendingUserList[]>
+    {
+      
+        return this.http.get<PendingUserList[]>("http://localhost:8181/viewpendingusers")
+
+    }
+
+    viewApproved():Observable<ApprovedUserList[]>
+    {
+      
+        return this.http.get<ApprovedUserList[]>("http://localhost:8181/viewapprovedusers")
 
     }
 
