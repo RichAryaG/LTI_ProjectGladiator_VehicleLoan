@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserService } from '../UserService';
 
 @Component({
   selector: 'app-view-rejected',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewRejectedComponent implements OnInit {
 
-  constructor() { }
+  public AllRejectedUserList =[];
 
-  ngOnInit(): void {
-  }
+  constructor (private service:UserService, private router:Router) { }
+  
+  ngOnInit() {
+    this.service.viewRejected()
+    .subscribe(data => this.AllRejectedUserList = data);
 
+}
 }

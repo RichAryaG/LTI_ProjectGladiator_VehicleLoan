@@ -1,1 +1,5 @@
-<p>view-rejected works!</p>
+<h2>Rejected User List </h2>
+<ul *ngFor = "let user of AllRejectedUserList">
+    <li>{{user.loanId}}</li>
+    <li>{{user.applicationStatus}}</li>
+</ul>
