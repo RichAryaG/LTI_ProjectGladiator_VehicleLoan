@@ -34,20 +34,20 @@ export class AccountRegisterComponent{
     account.monthlySavings=this.monthlySavings;
 
 
-    this.service.registerAccount(account).subscribe(
-      account=>{
-        if(account.status=='SUCCESS')
-        {
-          console.log(account)
-          alert("Account details updated !!");
-          this.router.navigate(['register-vehicle'])
-        }
-        else
-        {
-          alert("Account Already Exists !!");
-        }
-    }
-    )
+  //   this.service.registerAccount(account).subscribe(
+  //     account=>{
+  //       if(account.status=='SUCCESS')
+  //       {
+  //         console.log(account)
+  //         alert("Account details updated !!");
+  //         this.router.navigate(['register-vehicle'])
+  //       }
+  //       else
+  //       {
+  //         alert("Account Already Exists !!");
+  //       }
+  //   }
+  //   )
   }
 }
 
