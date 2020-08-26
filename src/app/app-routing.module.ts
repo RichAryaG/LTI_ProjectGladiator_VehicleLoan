@@ -18,6 +18,7 @@ import { ViewApplicationComponent } from './view-application/view-application.co
 import { ViewClientsComponent } from './view-clients/view-clients.component';
 import { ViewRejectedComponent } from './view-rejected/view-rejected.component';
 import { LogoutComponent } from './logout/logout.component';
+import { LoanappsuccessComponent } from './loanappsuccess/loanappsuccess.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'admin', component: LoginAdminComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'user', component: LoginUserComponent},
+  {path: 'loanappsuccess', component: LoanappsuccessComponent},
   {path: 'vehicleregister', component: VehicleRegisterComponent},
   {path: 'accountregister', component: AccountRegisterComponent},
   {path: 'view-all-user', component: ViewAllUsersComponent},

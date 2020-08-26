@@ -19,4 +19,8 @@ export class LogicsuccessComponent implements OnInit {
       this.router.navigate(['login']);
     }
   }
+  redirect()
+  {
+    this.router.navigate(['logout']);
+  }
 }

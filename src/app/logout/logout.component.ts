@@ -13,7 +13,7 @@ export class LogoutComponent implements OnInit {
     sessionStorage.clear();
     setTimeout(function(){
       window.location.href = '/home';
-   }, 5000);
+   }, 3000);
   }
 
 }

@@ -1,5 +1,12 @@
 div{
     position: relative;
-    top: 100px;
-    left: 100px;
+    top: 280px;
+    left: 510px;
+    background-color: #4A6B57;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
 }

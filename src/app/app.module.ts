@@ -24,6 +24,7 @@ import { ViewClientsComponent } from './view-clients/view-clients.component';
 import { ViewApplicationComponent } from './view-application/view-application.component';
 import { ViewRejectedComponent } from './view-rejected/view-rejected.component';
 import { LogoutComponent } from './logout/logout.component';
+import { LoanappsuccessComponent } from './loanappsuccess/loanappsuccess.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { LogoutComponent } from './logout/logout.component';
     ViewApplicationComponent,
     ViewRejectedComponent,
     LogoutComponent,
+    LoanappsuccessComponent,
   ],
   imports: [
     BrowserModule,
