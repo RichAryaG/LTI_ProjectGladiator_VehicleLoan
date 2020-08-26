@@ -12,14 +12,13 @@
           <th> ZIP </th>
           <th> TYPE </th>
         </tr>
-      <tr *ngFor = "let user of UserList; let index = index;"> 
+      <tr *ngFor = "let user of AllUserList; let index = index;"> 
         <td> {{index + 1}} </td>
         <td> {{user.userId}} </td> 
         <td> {{user.userNameFirst}} </td> 
         <td> {{user.userNameLast}} </td>
         <td> {{user.userAge}} </td>
         <td> {{user.UserGender}} </td>
-        <td> {{user.userAge}} </td>
         <td> {{user.userAddress}} </td>
         <td> {{user.userEmail}} </td>
         <td> {{user.userZip}} </td>
