@@ -1,7 +1,7 @@
 export class Vehicle {
     
     vehicleId:string;
-    vehicleMake:string;
+    vehicleName:string;
     vehicleModel:string;
     vehicleType:string;
     vehicleYear:number;
