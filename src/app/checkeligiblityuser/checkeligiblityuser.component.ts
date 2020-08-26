@@ -31,7 +31,7 @@ export class CheckeligiblityuserComponent implements OnInit{
       if(this.elig==false)
       {
         this.stat="USER IS ELIGIBLE!";
-        this.route="/loanregister";
+        this.route="/vehicleregister";
         alert(this.stat);
       }
     }

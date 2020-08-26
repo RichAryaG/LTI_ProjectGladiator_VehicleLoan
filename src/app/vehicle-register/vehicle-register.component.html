@@ -5,11 +5,12 @@
         <p class = "text" style = "color: grey; font-size: 12px;">Enter Your Vehicle Details<p> <br>
             <form (ngSubmit)="registerVehicle()" ngNativeValidate>           
                 <input type="text" name="VehicleId" placeholder="Vehicle Registration Number"  [(ngModel)]="VehicleId" required/><br>
-                <input type="text" name="VehicleMake" placeholder="Vehicle Make"  [(ngModel)]= "VehicleMake"/><br>
+                <input type="text" name="VehicleName" placeholder="Vehicle Name"  [(ngModel)]= "VehicleName"/><br>
                 <input type="text" name="VehicleModel" placeholder="Vehicle Model"  [(ngModel)]= "VehicleModel"/><br>
                 <select type="text" name="VehicleType"  class="typeclass"  [(ngModel)]= "VehicleType" required>
-                    <option selected disabled hidden value='undefined'> Select Vehcile Type: </option>
+                    <option selected disabled hidden value='undefined'> Select Vehicle Type: </option>
                     <option value="TwoWheeler">Two Wheeler</option>
+                    <option value="ThreeWheeler">Three Wheeler</option>
                     <option value="FourWheeler">Four Wheeler</option>
                 </select><br>
                 <input type="number" name="VehicleYear" placeholder="Vehicle Year"  [(ngModel)]= "VehicleYear"/><br>

@@ -19,8 +19,17 @@
         <input type = "text" style = "width: 43%;" placeholder = "Type of Employment"/>
         <input type = "number" style = "width: 43%; float:right;" name="monthlysavings" placeholder = "Monthly Savings (Ex:- 10000)" [(ngModel)]="monthlysavings" required/>
         <input type = "number" style = "width: 43%;" name="existingemi" placeholder = "Existing EMI" [(ngModel)]="existingemi" required/> 
-        <input type = "number" style = "width: 43%; float:right;" name="loantenure" placeholder = "Loan Tenure" [(ngModel)]="loantenure" required/><br> <br>
-
+        <select type="number" name="loantenure"  class="loantenure" [(ngModel)]="loantenure" required><br>
+            <option selected disabled hidden style='display: none' value='undefined'>Select the Loan Tenure: </option>
+            <option value=6>6</option>
+            <option value=12>12</option>
+            <option value=24>24</option>
+            <option value=36>36</option>
+            <option value=48>48</option>
+            <option value=60>60</option>
+            <option value=72>72</option>
+            <option value=84>84</option>
+        </select><br>
         <hr style = "height: 2px; border: 0; background-color: rgb(214, 214, 214);">
         <br>
 

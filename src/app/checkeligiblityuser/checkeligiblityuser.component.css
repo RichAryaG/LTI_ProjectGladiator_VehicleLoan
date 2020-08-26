@@ -38,6 +38,23 @@
     text-decoration: none; /* remove underline from anchors */
   }
 
+  select{
+    width: 46%;
+    padding: 10px;
+    border: none;
+    float: right;
+    margin: 5px 0;
+    border-radius: 5px;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+
   .submit {
     width: 50%;
     padding: 20px;
@@ -47,6 +64,7 @@
     opacity: 0.85;
     display: inline-block;
     font-size: 20px;
+    color: white;
     background-color: #4A6B57;
     text-align: center;
     line-height: 20px;

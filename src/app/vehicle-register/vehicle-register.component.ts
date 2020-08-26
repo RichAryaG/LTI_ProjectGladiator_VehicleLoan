@@ -13,7 +13,7 @@ export class VehicleRegisterComponent {
   constructor(private service:UserService, private router:Router) { }
 
   VehicleId:string;
-  VehicleMake:string;
+  VehicleName:string;
   VehicleModel:string;
   VehicleType:string;
   VehicleYear:number;
@@ -27,7 +27,7 @@ export class VehicleRegisterComponent {
     vehicle.exShowroomPrice = this.ExShowroomPrice;
     vehicle.onRoadPrice = this.OnRoadPrice;
     vehicle.vehicleColour = this.VehicleColour;
-    vehicle.vehicleMake = this.VehicleMake;
+    vehicle.vehicleName = this.VehicleName;
     vehicle.vehicleModel = this.VehicleModel;
     vehicle.vehicleType = this.VehicleType;
     vehicle.vehicleYear = this.VehicleYear;
