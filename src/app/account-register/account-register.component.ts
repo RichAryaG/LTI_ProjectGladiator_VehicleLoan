@@ -9,8 +9,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./account-register.component.css']
 })
 
-export class AccountRegisterComponent{
+export class AccountRegisterComponent implements OnInit{
   constructor (private service:UserService, private router:Router) { }
+
+  userId:String;
+  ngOnInit(): void 
+  {
+    this.userId=sessionStorage.getItem('userId');
+    if(this.userId==null)
+    {
+      this.router.navigate(['login']);
+    }
+  }
+
   accNumber:any;
   accBankName:any;
   accIfsc:any;

@@ -9,8 +9,19 @@ import { User } from '../user';
   templateUrl: './vehicle-register.component.html',
   styleUrls: ['./vehicle-register.component.css']
 })
-export class VehicleRegisterComponent {
-  constructor(private service:UserService, private router:Router) { }
+export class VehicleRegisterComponent implements OnInit
+{
+  constructor (private service:UserService, private router:Router) { }
+
+  userId:String;
+  ngOnInit(): void 
+  {
+    this.userId=sessionStorage.getItem('userId');
+    if(this.userId==null)
+    {
+      this.router.navigate(['login']);
+    }
+  }
 
   VehicleId:string;
   VehicleName:string;

@@ -1,0 +1,42 @@
+.dash, .logout{
+    float: left;
+    background-color: #304538;
+    color: white;
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+    margin-left: 1.3em;
+    line-height: 30px;
+    height: 2em;
+}
+
+.complete{
+    overflow: hidden;
+    text-align: center;
+    margin: 10em auto;
+    height: 300px;
+    padding: 10px;
+    background-color: #4A6B57;
+    width: 500px;
+    border-radius: 10px;
+}
+
+p{
+    width: 60%;
+    position: relative;
+    background-color: #96bba4;
+    left: 85px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:20px;
+}
+
+a{
+    color:white;
+}
