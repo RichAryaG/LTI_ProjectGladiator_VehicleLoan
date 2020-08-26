@@ -17,6 +17,7 @@ import { CheckeligiblityComponent } from './checkeligiblity/checkeligiblity.comp
 import { ApplyloanComponent } from './applyloan/applyloan.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AccountRegisterComponent } from './account-register/account-register.component';
+import { VehicleRegisterComponent } from './vehicle-register/vehicle-register.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AccountRegisterComponent } from './account-register/account-register.co
     ApplyloanComponent,
     RegistrationComponent,
     AccountRegisterComponent,
+    VehicleRegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <h1 class = "text" style = "font-size: 25px;">Application Form</h1>
+        <hr style = "width:70%">
+        <p class = "text" style = "color: grey; font-size: 12px;">Enter Your Vehicle Details<p> <br>
+            <form>           
+                <input type="text" name="VehicleId" placeholder="Vehicle Registration Number" required/><br>
+                <input type="text" name="VehicleMake" placeholder="Vehicle Make"/><br>
+                <input type="text" name="VehicleModel" placeholder="Vehicle Model"/><br>
+                <select type="text" name="VehicleType"  class="typeclass" required>
+                    <option selected disabled hidden value='undefined'> Select Vehcile Type: </option>
+                    <option value="TwoWheeler">Two Wheeler</option>
+                    <option value="FourWheeler">Four Wheeler</option>
+                </select><br>
+                <input type="number" name="VehicleYear" placeholder="Vehicle Year"/><br>
+                <input type="text" name="VehicleColour" placeholder="Vehicle Colour"/><br>
+                <input type="number" name="ExShowroomPrice" placeholder="Ex-Showroom Price"/><br>
+                <input type="number" name="OnRoadPrice" placeholder="OnRoadPrice" required/><br>
+                <button class="btn register">Register Vehicle</button><br><br>
+        </form>
+    </div>
+</div>

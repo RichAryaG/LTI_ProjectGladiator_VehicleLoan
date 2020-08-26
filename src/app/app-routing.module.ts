@@ -10,6 +10,7 @@ import { AdminlogicsuccessComponent } from './adminlogicsuccess/adminlogicsucces
 import { CheckeligiblityComponent } from './checkeligiblity/checkeligiblity.component';
 import { ApplyloanComponent } from './applyloan/applyloan.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { VehicleRegisterComponent } from './vehicle-register/vehicle-register.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'registration', component: RegistrationComponent},
   {path: 'admin', component: LoginAdminComponent},
   {path: 'user', component: LoginUserComponent},
+  {path: 'vehicleregister', component: VehicleRegisterComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
