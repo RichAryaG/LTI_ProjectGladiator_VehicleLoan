@@ -40,4 +40,12 @@ export class UserService {
      
     }
 
+    registerAccount(account:Account):Observable<any>
+    {
+      
+        return this.http.post("http://localhost:8181/registerAccount",account)
+
+     
+    }
+
   }

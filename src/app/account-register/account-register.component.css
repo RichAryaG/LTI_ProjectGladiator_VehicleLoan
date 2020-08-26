@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sanswght@600&display=swap');
+
+.text {
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  color: #233329;
+}
+.container {
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+} 
+
+/* style inputs and link buttons */
+input, .btn, .actype {
+  width: 70%;
+  padding: 20px;
+  border: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+/* style the submit button */
+.registerAccount {
+  background-color: #4A6B57;
+  color: white;
+  cursor: pointer;
+}
+.register:hover {
+  background-color: #304538;
+}
+/* Two-column layout */
+.row {
+  float: center;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #304538;
+  width: 40%;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.DOB{
+    width: 70%;
+    padding: 20px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }

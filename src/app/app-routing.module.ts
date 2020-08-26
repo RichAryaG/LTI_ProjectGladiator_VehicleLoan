@@ -12,6 +12,7 @@ import { CheckeligiblityuserComponent } from './checkeligiblityuser/checkeligibl
 import { LoanregisterComponent } from './loanregister/loanregister.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { VehicleRegisterComponent } from './vehicle-register/vehicle-register.component';
+import { AccountRegisterComponent } from './account-register/account-register.component'
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path: 'admin', component: LoginAdminComponent},
   {path: 'user', component: LoginUserComponent},
   {path: 'vehicleregister', component: VehicleRegisterComponent},
+  {path: 'account', component: AccountRegisterComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
