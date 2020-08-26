@@ -20,6 +20,9 @@ import { AccountRegisterComponent } from './account-register/account-register.co
 import { VehicleRegisterComponent } from './vehicle-register/vehicle-register.component';
 import { LoanregisterComponent } from './loanregister/loanregister.component';
 import { ViewAllUsersComponent } from './view-all-users/view-all-users.component';
+import { ViewClientsComponent } from './view-clients/view-clients.component';
+import { ViewApplicationComponent } from './view-application/view-application.component';
+import { ViewRejectedComponent } from './view-rejected/view-rejected.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { ViewAllUsersComponent } from './view-all-users/view-all-users.component
     RegistrationComponent,
     AccountRegisterComponent,
     VehicleRegisterComponent,
-    ViewAllUsersComponent
+    ViewAllUsersComponent,
+    ViewClientsComponent,
+    ViewApplicationComponent,
+    ViewRejectedComponent
   ],
   imports: [
     BrowserModule,
