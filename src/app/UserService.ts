@@ -61,4 +61,14 @@ export class UserService {
 
     }
 
+    // adminViewAllUsers()
+    // {
+
+    //   return this.http.post("http://localhost:8181/viewallusers", admin)
+
+    // }
+
+
+
+
   }
