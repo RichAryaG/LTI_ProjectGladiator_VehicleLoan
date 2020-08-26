@@ -13,6 +13,10 @@ import { LoanregisterComponent } from './loanregister/loanregister.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { VehicleRegisterComponent } from './vehicle-register/vehicle-register.component';
 import { AccountRegisterComponent } from './account-register/account-register.component'
+import { ViewAllUsersComponent } from './view-all-users/view-all-users.component';
+import { ViewApplicationComponent } from './view-application/view-application.component';
+import { ViewClientsComponent } from './view-clients/view-clients.component';
+import { ViewRejectedComponent } from './view-rejected/view-rejected.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -28,6 +32,10 @@ const routes: Routes = [
   {path: 'user', component: LoginUserComponent},
   {path: 'vehicleregister', component: VehicleRegisterComponent},
   {path: 'accountregister', component: AccountRegisterComponent},
+  {path: 'view-all-user', component: ViewAllUsersComponent},
+  {path: 'view-application', component: ViewApplicationComponent},
+  {path: 'view-clients', component: ViewClientsComponent},
+  {path: 'view-rejected', component: ViewRejectedComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
