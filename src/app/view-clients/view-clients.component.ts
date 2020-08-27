@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./view-clients.component.css']
 })
 export class ViewClientsComponent implements OnInit {
-  public AllApprovedUserList =[];
+  public AllApprovedUserList = [];
 
   constructor (private service:UserService, private router:Router) { }
   
