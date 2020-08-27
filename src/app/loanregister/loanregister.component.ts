@@ -31,12 +31,11 @@ export class LoanregisterComponent implements OnInit {
     loan.loanAmount=this.loanAmount;
     loan.loanEndDate=new Date(new Date().setMonth(new Date().getMonth() + Number(this.tenure)));
     loan.loanStartDate=formatDate(new Date(), 'yyyy-MM-dd', 'en');
-    loan.loanStatus=this.loanStatus;
+    loan.loanStatus="New";
     loan.processingFee=this.processingFee;
     loan.tenure=this.tenure;
     loan.emi=(this.loanAmount/this.tenure);
-    loan.loantype="New";
-    console.log(this.tenure);
+    loan.loantype=this.loantype;
     this.service.registerloan(loan).subscribe(
       loan=>{
         if(loan.status=='SUCCESS')

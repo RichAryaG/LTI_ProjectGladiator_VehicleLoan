@@ -55,3 +55,21 @@ table, th , td  {
     font-family: 'Open Sans', sans-serif;
     color: #233329;
   }
+
+  .accept{
+    width:100%;
+    background-color: rgb(43, 78, 43);
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .reject{
+    width:100%;
+    background-color: rgb(116, 21, 21);
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+  }
