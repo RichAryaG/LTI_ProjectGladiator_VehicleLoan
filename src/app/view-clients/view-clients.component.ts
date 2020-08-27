@@ -10,9 +10,17 @@ import { Router } from '@angular/router';
 export class ViewClientsComponent implements OnInit {
   public AllApprovedUserList = [];
 
+  adminName:any;
+  adminId:any;
   constructor (private service:UserService, private router:Router) { }
   
   ngOnInit() {
+    this.adminName=sessionStorage.getItem('adminName');
+    this.adminId=sessionStorage.getItem('adminId');
+    if(this.adminId==null)
+    {
+      this.router.navigate(['admin']);
+    }
     this.service.viewApproved()
     .subscribe(data => this.AllApprovedUserList = data);
 

@@ -35,7 +35,7 @@ export class LoanregisterComponent implements OnInit {
     loan.processingFee=this.processingFee;
     loan.tenure=this.tenure;
     loan.emi=(this.loanAmount/this.tenure);
-    loan.loantype=this.loantype;
+    loan.loantype="New";
     console.log(this.tenure);
     this.service.registerloan(loan).subscribe(
       loan=>{
@@ -57,7 +57,7 @@ export class LoanregisterComponent implements OnInit {
     this.userId=sessionStorage.getItem('userId');
     if(this.userId==null)
     {
-      this.router.navigate(['login']);
+      this.router.navigate(['user']);
     }
   }
 }

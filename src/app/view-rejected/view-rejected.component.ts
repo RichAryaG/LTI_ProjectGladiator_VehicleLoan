@@ -10,10 +10,17 @@ import { UserService } from '../UserService';
 export class ViewRejectedComponent implements OnInit {
 
   public AllRejectedUserList =[];
-
+  adminName:any;
+  adminId:any;
   constructor (private service:UserService, private router:Router) { }
   
   ngOnInit() {
+    this.adminName=sessionStorage.getItem('adminName');
+    this.adminId=sessionStorage.getItem('adminId');
+    if(this.adminId==null)
+    {
+      this.router.navigate(['admin']);
+    }
     this.service.viewRejected()
     .subscribe(data => this.AllRejectedUserList = data);
 
