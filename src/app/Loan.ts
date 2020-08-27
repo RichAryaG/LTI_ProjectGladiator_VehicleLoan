@@ -10,5 +10,5 @@ export class Loan
     processingFee:any;
     tenure:any;
     loantype:any;
-    user_Id:any;
+    user_id:any;
 }

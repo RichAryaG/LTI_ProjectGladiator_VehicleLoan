@@ -11,7 +11,7 @@ import {formatDate} from '@angular/common';
 })
 export class LoanregisterComponent implements OnInit {
   constructor(private service:UserService, private router:Router) { }
-  user_Id:string;
+  user_id:string;
   applicationStatus:any;
   interestRate:any;
   processingFee:any;
@@ -115,7 +115,7 @@ export class LoanregisterComponent implements OnInit {
     loan.loanStartDate=formatDate(new Date(), 'yyyy-MM-dd', 'en');
     loan.loanStatus="New";
     loan.tenure=this.tenure;
-    loan.user_Id=this.user_Id;
+    loan.user_id=this.user_id;
     loan.emi=this.loanAmount*(this.interestRate/120)*(((1+this.interestRate/120)^this.tenure)/(((1+this.interestRate/120)^this.tenure)-1));
     this.service.registerloan(loan).subscribe(
       loan=>{
@@ -134,8 +134,8 @@ export class LoanregisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.user_Id=sessionStorage.getItem('userId');
-    if(this.user_Id==null)
+    this.user_id=sessionStorage.getItem('userId');
+    if(this.user_id==null)
     {
       this.router.navigate(['user']);
     }
