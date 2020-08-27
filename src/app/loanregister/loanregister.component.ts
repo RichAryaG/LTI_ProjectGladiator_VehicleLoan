@@ -14,11 +14,11 @@ export class LoanregisterComponent implements OnInit {
   userId:string;
   applicationStatus:any;
   interestRate:any;
+  processingFee:any;
   loanAmount:any;
   loanEndDate:any;
   loanStartDate:any;
   loanStatus:any;
-  processingFee:any;
   tenure:any;
   loantype:any;
   emi=this.loanAmount/this.tenure;
@@ -58,32 +58,17 @@ export class LoanregisterComponent implements OnInit {
     {
       this.interestRate=11;
     }
-
-    if (this.loantype==2)
-    {
-      this.processingFee==1200;
-    }
-
-    else if(this.loantype==3)
-    {
-      this.processingFee==1800;
-    }
-
-    else if(this.loantype==4)
-    {
-      this.processingFee==2400;
-    }
     var loan=new Loan();
     loan.applicationStatus="Pending";
     loan.interestRate=this.interestRate;
     loan.loanAmount=this.loanAmount;
+    loan.loantype=this.loantype;
+    loan.processingFee=2000;
     loan.loanEndDate=new Date(new Date().setMonth(new Date().getMonth() + Number(this.tenure)));
     loan.loanStartDate=formatDate(new Date(), 'yyyy-MM-dd', 'en');
     loan.loanStatus="New";
-    loan.processingFee=this.processingFee;
     loan.tenure=this.tenure;
-    loan.emi=(this.loanAmount/this.tenure);
-    loan.loantype=this.loantype;
+    loan.emi=this.loanAmount*(this.interestRate/120)*(((1+this.interestRate/120)^this.tenure)/(((1+this.interestRate/120)^this.tenure)-1));
     this.service.registerloan(loan).subscribe(
       loan=>{
         if(loan.status=='SUCCESS')
