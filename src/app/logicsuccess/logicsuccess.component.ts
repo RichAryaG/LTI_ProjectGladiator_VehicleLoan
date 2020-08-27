@@ -9,10 +9,11 @@ import { Router} from "@angular/router";
 
 export class LogicsuccessComponent implements OnInit {
   constructor(private router:Router) { }
+  
   userName:string;
   userId:string;
   public AppliedLoanList =[];
-  ngOnInit(): void { 
+  ngOnInit(): void {
     this.userName=sessionStorage.getItem('userName');
     this.userId=sessionStorage.getItem('userId');
     if(this.userId==null)
@@ -20,11 +21,12 @@ export class LogicsuccessComponent implements OnInit {
       this.router.navigate(['user']);
     }
   }
+  
   redirect()
   {
     this.router.navigate(['logout']);
   }
-  viewAppliedLoans()
+  viewLoanStatus()
   {
     this.router.navigate(['check-loan-status']);
   }

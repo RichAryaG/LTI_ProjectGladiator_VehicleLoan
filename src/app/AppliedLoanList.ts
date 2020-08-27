@@ -13,5 +13,5 @@ export class AppliedLoanList
         loantype: any;
         accounts: any;
         vehicle: any;
-        userId: any;
+        user_id: any;
 }

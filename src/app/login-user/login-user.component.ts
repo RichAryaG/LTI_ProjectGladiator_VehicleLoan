@@ -14,7 +14,7 @@ export class LoginUserComponent {
   message:any
 
   constructor(private service: UserService, private router:Router) { }
-
+  
   login()
   {
     var login=new Login()
@@ -30,6 +30,7 @@ export class LoginUserComponent {
           sessionStorage.setItem('userName', userName)
           sessionStorage.setItem('userId', userId)
           this.router.navigate(['loginsuccess'])
+          
         }
         else
         {
