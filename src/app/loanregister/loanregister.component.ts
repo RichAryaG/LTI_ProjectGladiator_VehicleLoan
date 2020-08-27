@@ -97,7 +97,7 @@ export class LoanregisterComponent implements OnInit {
     }
 
     if(this.loantype==2){
-      this.processingFee ==2000;
+      this.processingFee =2000;
     }
     else if (this.loantype == 3) {
       this.processingFee = 3000;
