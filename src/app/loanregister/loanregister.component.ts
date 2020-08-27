@@ -25,6 +25,54 @@ export class LoanregisterComponent implements OnInit {
 
   registerloan()
   {
+    if(this.tenure==6)
+    {
+      this.interestRate=7;
+    }
+
+    else if(this.tenure==12)
+    {
+      this.interestRate=7.5;
+    }
+    else if(this.tenure==24)
+    {
+      this.interestRate=8;
+    }
+    else if(this.tenure==36)
+    {
+      this.interestRate=8.5;
+    }
+    else if(this.tenure==48)
+    {
+      this.interestRate=9;
+    }
+    else if(this.tenure==60)
+    {
+      this.interestRate=9.5;
+    }
+    else if(this.tenure==72)
+    {
+      this.interestRate=10.5;
+    }
+    else if(this.tenure==84)
+    {
+      this.interestRate=11;
+    }
+
+    if (this.loantype==2)
+    {
+      this.processingFee==1200;
+    }
+
+    else if(this.loantype==3)
+    {
+      this.processingFee==1800;
+    }
+
+    else if(this.loantype==4)
+    {
+      this.processingFee==2400;
+    }
     var loan=new Loan();
     loan.applicationStatus="Pending";
     loan.interestRate=this.interestRate;
