@@ -94,16 +94,16 @@ export class LoanregisterComponent implements OnInit {
       this.interestRate=11;
     }
 
-    if(this.loantype=2){
-      this.processingFee = 2000;
+    if(this.loantype==2){
+      this.processingFee ==2000;
     }
-    else if (this.processingFee = 3) {
+    else if (this.loantype== 3) {
       this.processingFee = 3000;
     }
-    else if (this.processingFee = 4) {
+    else if (this.loantype == 4) {
       this.processingFee = 4000;
     }
-    console.log(this.processingFee);
+
     var loan=new Loan();
     loan.applicationStatus="Pending";
     loan.interestRate=this.interestRate;
@@ -132,10 +132,10 @@ export class LoanregisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.userId=sessionStorage.getItem('userId');
-    if(this.userId==null)
-    {
-      this.router.navigate(['user']);
-    }
+    // this.userId=sessionStorage.getItem('userId');
+    // if(this.userId==null)
+    // {
+    //   this.router.navigate(['user']);
+    // }
   }
 }
