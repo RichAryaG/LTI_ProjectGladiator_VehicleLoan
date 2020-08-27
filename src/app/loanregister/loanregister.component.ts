@@ -3,7 +3,7 @@ import { Router} from "@angular/router";
 import { UserService } from "../UserService";
 import { Loan } from '../Loan';
 import {formatDate} from '@angular/common';
-
+import { animation } from '@angular/animations';
 @Component({
   selector: 'app-loanregister',
   templateUrl: './loanregister.component.html',
@@ -26,6 +26,7 @@ export class LoanregisterComponent implements OnInit {
   emi=this.loanAmount/this.tenure;
 
   selectChangeHandler() {
+    console.log(this.user_id);
       if(this.tenure==6)
       {
         this.selectedEMI="7%";
