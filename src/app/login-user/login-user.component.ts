@@ -26,9 +26,17 @@ export class LoginUserComponent {
         {
           let userName= user.userNameFirst;
           let userId= user.userId;
+          let userNameLast=user.userNameLast; 
+          let userAge=user.userAge;
+          let userAddress=user.userAddress;
+          let userEmail=user.userEmail;
 
           sessionStorage.setItem('userName', userName)
-          sessionStorage.setItem('userId', userId)
+          sessionStorage.setItem('userId', user.userId)
+          sessionStorage.setItem('userLast', user.userNameLast)
+          sessionStorage.setItem('userAge', user.userAge)
+          sessionStorage.setItem('userAddress', user.userAddress)
+          sessionStorage.setItem('userEmail', user.userEmail)
           this.router.navigate(['loginsuccess'])
           
         }

@@ -1,7 +1,6 @@
 <div class = "navpanel" >
   <a routerLink='/checkeligiblity' class='checkeligibility'>Check Eligibility</a>
-  <a *ngIf = "loginbtn" class="login" (click)="login()">Login</a>
-  <a *ngIf = "logoutbtn" class="login" (click) = "logout()">Logout</a>
+  <a routerLink='/login' class='login'>Login</a>
   <a routerLink='/home' class='home'>Home</a>
   <img style = "height: 40px; margin:15px 30px; vertical-align: middle;" src = "assets/images/logo2.png">
 </div>
