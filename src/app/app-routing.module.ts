@@ -19,6 +19,7 @@ import { ViewClientsComponent } from './view-clients/view-clients.component';
 import { ViewRejectedComponent } from './view-rejected/view-rejected.component';
 import { LogoutComponent } from './logout/logout.component';
 import { LoanappsuccessComponent } from './loanappsuccess/loanappsuccess.component';
+import { ViewApplicationFormComponent } from './view-application-form/view-application-form.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path: 'view-application', component: ViewApplicationComponent},
   {path: 'view-clients', component: ViewClientsComponent},
   {path: 'view-rejected', component: ViewRejectedComponent},
+  {path: 'view-application-form', component: ViewApplicationFormComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
