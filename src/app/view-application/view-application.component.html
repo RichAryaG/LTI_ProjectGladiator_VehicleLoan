@@ -17,6 +17,8 @@
           <th> TENURE </th>
           <th> LOAN STATUS </th>
           <th> APPLICATION STATUS </th>
+          <th> ACCEPT? </th>
+          <th> REJECT? </th>
         </tr>
       <tr *ngFor = "let user of AllPendingUserList; let index = index;"> 
         <td> {{index + 1}} </td>
@@ -29,6 +31,8 @@
         <td> {{user.tenure}} </td>
         <td> {{user.loanStatus}} </td>
         <td> {{user.applicationStatus}} </td>
+        <td> <input type = "button" value="Accept"> </td>
+        <td> <input type = "button" value="Accept"> </td>
       </tr>
       </table>
 </div>
