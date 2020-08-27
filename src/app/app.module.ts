@@ -27,6 +27,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { LoanappsuccessComponent } from './loanappsuccess/loanappsuccess.component';
 import { ViewApplicationFormComponent } from './view-application-form/view-application-form.component';
 import { EmiSchedulerComponent } from './emi-scheduler/emi-scheduler.component';
+import { CheckLoanStatusComponent } from './check-loan-status/check-loan-status.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { EmiSchedulerComponent } from './emi-scheduler/emi-scheduler.component';
     LoanappsuccessComponent,
     ViewApplicationFormComponent,
     EmiSchedulerComponent,
+    CheckLoanStatusComponent,
   ],
   imports: [
     BrowserModule,
