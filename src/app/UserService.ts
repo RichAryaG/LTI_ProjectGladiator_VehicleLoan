@@ -112,7 +112,7 @@ export class UserService {
     viewloanstatus(user_id: Loan):Observable<AppliedLoanList[]>
     {
       
-        return this.http.post<AppliedLoanList[]>("http://localhost:8181/viewloanstatus", user_id)
+        return this.http.get<AppliedLoanList[]>('http://localhost:8181/viewloanstatus/'+user_id)
 
     }
 
