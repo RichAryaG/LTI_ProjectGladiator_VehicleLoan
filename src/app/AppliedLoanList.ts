@@ -1,4 +1,4 @@
-export class ApprovedUserList
+export class AppliedLoanList
 {
         loanId: any;
         applicationStatus: any;
@@ -13,4 +13,5 @@ export class ApprovedUserList
         loantype: any;
         accounts: any;
         vehicle: any;
+        userId: any;
 }

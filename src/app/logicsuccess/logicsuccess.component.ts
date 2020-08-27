@@ -11,6 +11,7 @@ export class LogicsuccessComponent implements OnInit {
   constructor(private router:Router) { }
   userName:string;
   userId:string;
+  public AppliedLoanList =[];
   ngOnInit(): void { 
     this.userName=sessionStorage.getItem('userName');
     this.userId=sessionStorage.getItem('userId');
@@ -23,4 +24,5 @@ export class LogicsuccessComponent implements OnInit {
   {
     this.router.navigate(['logout']);
   }
+  viewAppliedLoans(){}
 }

@@ -22,6 +22,7 @@ export class LoanregisterComponent implements OnInit {
   tenure:any;
   loantype:any;
   selectedEMI:string;
+  
   emi=this.loanAmount/this.tenure;
 
   selectChangeHandler() {
@@ -114,6 +115,7 @@ export class LoanregisterComponent implements OnInit {
     loan.loanStartDate=formatDate(new Date(), 'yyyy-MM-dd', 'en');
     loan.loanStatus="New";
     loan.tenure=this.tenure;
+    loan.userId=this.userId;
     loan.emi=this.loanAmount*(this.interestRate/120)*(((1+this.interestRate/120)^this.tenure)/(((1+this.interestRate/120)^this.tenure)-1));
     this.service.registerloan(loan).subscribe(
       loan=>{

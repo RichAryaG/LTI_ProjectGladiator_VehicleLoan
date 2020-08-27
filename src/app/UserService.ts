@@ -10,6 +10,7 @@ import { UserList } from './UserList';
 import { RejectedUserList } from './RejectedUserList';
 import { ApprovedUserList } from './ApprovedUserList';
 import { PendingUserList } from './PendingUserList';
+import { AppliedLoanList } from './AppliedLoanList';
 
 
 
@@ -107,5 +108,13 @@ export class UserService {
         return this.http.post("http://localhost:8181/rejectloan", loanId)
 
     }
+
+    viewAppliedLoans(userId: Loan):Observable<ApprovedUserList[]>
+    {
+      
+        return this.http.get<AppliedLoanList[]>("http://localhost:8181/viewappliedLoans")
+
+    }
+
 
   }
