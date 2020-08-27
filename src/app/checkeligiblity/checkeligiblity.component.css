@@ -7,8 +7,8 @@
     width: 50%;
     margin: auto;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 100px;
+    margin-bottom: 150px;
   } 
   .row {
     flex: 100%;
@@ -60,3 +60,14 @@
   .login:hover {
     background-color: #304538;
   }
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+    background-color: #415e4c;
+    font-family: Verdana, sans-serif;
+    opacity: 80%;
+    color: rgb(226, 225, 225);
+    text-align: center;
+ }

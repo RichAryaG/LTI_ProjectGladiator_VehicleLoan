@@ -1,0 +1,30 @@
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+    background-color: #415e4c;
+    font-family: Verdana, sans-serif;
+    opacity: 80%;
+    color: rgb(226, 225, 225);
+    text-align: center;
+ }
+
+
+.container {
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 150px;
+  font-family: Verdana, sans-serif;
+  font-size: large;
+} 
+
+.row {
+  padding: 40px 160px;
+}
