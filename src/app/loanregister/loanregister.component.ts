@@ -132,10 +132,10 @@ export class LoanregisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.userId=sessionStorage.getItem('userId');
-    // if(this.userId==null)
-    // {
-    //   this.router.navigate(['user']);
-    // }
+    this.userId=sessionStorage.getItem('userId');
+    if(this.userId==null)
+    {
+      this.router.navigate(['user']);
+    }
   }
 }
