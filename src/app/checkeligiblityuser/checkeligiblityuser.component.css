@@ -82,3 +82,8 @@
   .login:hover {
     background-color: #304538;
   }
+
+.required
+{
+    color: red;
+}

@@ -10,11 +10,11 @@ export class CheckeligiblityuserComponent implements OnInit{
   constructor(private router:Router) { }
   userId:string;
   ngOnInit(): void {
-    this.userId=sessionStorage.getItem('userId');
-    if(this.userId==null)
-    {
-      this.router.navigate(['login']);
-    }
+    // this.userId=sessionStorage.getItem('userId');
+    // if(this.userId==null)
+    // {
+    //   this.router.navigate(['login']);
+    // }
   }
   elig: boolean=false;
   route="/checkeligiblityuser";
