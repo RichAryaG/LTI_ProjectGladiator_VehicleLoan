@@ -10,10 +10,17 @@ import { Router } from '@angular/router';
 export class ViewApplicationComponent implements OnInit {
 
   public AllPendingUserList =[];
-
+  adminName:any;
+  adminId:any;
   constructor (private service:UserService, private router:Router) { }
   
   ngOnInit() {
+    this.adminName=sessionStorage.getItem('adminName');
+    this.adminId=sessionStorage.getItem('adminId');
+    if(this.adminId==null)
+    {
+      this.router.navigate(['admin']);
+    }
     this.service.viewPending()
     .subscribe(data => this.AllPendingUserList = data);
 

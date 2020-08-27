@@ -57,7 +57,7 @@ export class LoanregisterComponent implements OnInit {
     this.userId=sessionStorage.getItem('userId');
     if(this.userId==null)
     {
-      this.router.navigate(['login']);
+      this.router.navigate(['user']);
     }
   }
 }
