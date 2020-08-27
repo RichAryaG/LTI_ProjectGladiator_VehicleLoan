@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from "@angular/router";
 
 @Component({
   selector: 'app-adminlogicsuccess',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./adminlogicsuccess.component.css']
 })
 export class AdminlogicsuccessComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  adminName:any;
+  adminId:any;
+  constructor(private router:Router) { }
+  
+  redirect()
+  {
+    this.router.navigate(['logout']);
   }
 
+  ngOnInit(): void { 
+    this.adminName=sessionStorage.getItem('adminName');
+    this.adminId=sessionStorage.getItem('adminId');
+    if(this.adminId==null)
+    {
+      this.router.navigate(['admin']);
+    }
+  }
 }

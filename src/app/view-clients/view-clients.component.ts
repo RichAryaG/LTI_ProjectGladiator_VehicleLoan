@@ -8,11 +8,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./view-clients.component.css']
 })
 export class ViewClientsComponent implements OnInit {
-  public AllApprovedUserList =[];
+  public AllApprovedUserList = [];
 
+  adminName:any;
+  adminId:any;
   constructor (private service:UserService, private router:Router) { }
   
   ngOnInit() {
+    this.adminName=sessionStorage.getItem('adminName');
+    this.adminId=sessionStorage.getItem('adminId');
+    if(this.adminId==null)
+    {
+      this.router.navigate(['admin']);
+    }
     this.service.viewApproved()
     .subscribe(data => this.AllApprovedUserList = data);
 
