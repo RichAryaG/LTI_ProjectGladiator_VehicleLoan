@@ -14,13 +14,13 @@ export class CheckLoanStatusComponent implements OnInit {
   userId:any;
   constructor (private service:UserService, private router:Router) { }
   
-  ngOnInit() {
-    this.userName=sessionStorage.getItem('userName');
-    this.userId=sessionStorage.getItem('userId');
-    if(this.userId==null)
-    {
-      this.router.navigate(['login']);
-    }
+    ngOnInit(): void { 
+      this.userName=sessionStorage.getItem('userName');
+      this.userId=sessionStorage.getItem('userId');
+      if(this.userId==null)
+      {
+        this.router.navigate(['user']);
+      }
     this.service.viewAppliedLoans(this.userId)
     .subscribe(data => this.AppliedLoanList = data);
 

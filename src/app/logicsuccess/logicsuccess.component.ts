@@ -24,5 +24,8 @@ export class LogicsuccessComponent implements OnInit {
   {
     this.router.navigate(['logout']);
   }
-  viewAppliedLoans(){}
+  viewAppliedLoans()
+  {
+    this.router.navigate(['check-loan-status']);
+  }
 }
