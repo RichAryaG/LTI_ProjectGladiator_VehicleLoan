@@ -117,7 +117,8 @@ export class LoanregisterComponent implements OnInit {
     loan.loanStatus="New";
     loan.tenure=this.tenure;
     loan.user_id=this.user_id;
-    loan.emi=this.loanAmount*(this.interestRate/120)*(((1+this.interestRate/120)^this.tenure)/(((1+this.interestRate/120)^this.tenure)-1));
+    // loan.emi=this.loanAmount*(this.interestRate/12)*(((1+this.interestRate/120)^this.tenure)/(((1+this.interestRate/120)^this.tenure)-1));
+    loan.emi = ((this.loanAmount * ((this.interestRate / 100) / 12)) * ((Math.pow((1 + ((this.interestRate / 100) / 12)), this.tenure)) / ((Math.pow((1 + ((this.interestRate / 100) / 12)), this.tenure)) - 1)));
     this.service.registerloan(loan).subscribe(
       loan=>{
         if(loan.status=='SUCCESS')
