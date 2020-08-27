@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../UserService';
 import { Router } from '@angular/router';
+import { User } from '../user';
 
 @Component({
   selector: 'app-view-application',
@@ -12,8 +13,33 @@ export class ViewApplicationComponent implements OnInit {
   public AllPendingUserList =[];
   adminName:any;
   adminId:any;
+  public loanId:number;
   constructor (private service:UserService, private router:Router) { }
   
+  approveLoan(loanId)
+  {
+    this.loanId=loanId;
+    console.log(loanId);
+    this.service.approveLoan(loanId).subscribe(
+      data => {
+         this.loanId= data;
+      }
+    );
+    window.location.reload();
+  }
+
+  rejectLoan(loanId)
+  {
+    this.loanId=loanId;
+    console.log(loanId);
+    this.service.rejectLoan(loanId).subscribe(
+      data => {
+         this.loanId= data;
+      }
+    );
+    window.location.reload();
+  }
+
   ngOnInit() {
     this.adminName=sessionStorage.getItem('adminName');
     this.adminId=sessionStorage.getItem('adminId');
@@ -21,8 +47,10 @@ export class ViewApplicationComponent implements OnInit {
     {
       this.router.navigate(['admin']);
     }
-    this.service.viewPending()
-    .subscribe(data => this.AllPendingUserList = data);
-
-}
+    this.service.viewPending().subscribe(
+      data => {
+        this.AllPendingUserList = data
+      }
+    );
+  }
 }

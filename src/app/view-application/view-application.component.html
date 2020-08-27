@@ -7,7 +7,6 @@
     </div>
     <table id = "table">
         <tr>
-          <th> INDEX </th>
           <th> LOAN ID</th>
           <th> LOAN TYPE </th>
           <th> EMI </th>
@@ -20,8 +19,7 @@
           <th> ACCEPT? </th>
           <th> REJECT? </th>
         </tr>
-      <tr *ngFor = "let user of AllPendingUserList; let index = index;"> 
-        <td> {{index + 1}} </td>
+      <tr *ngFor = "let user of AllPendingUserList;"> 
         <td> {{user.loanId}} </td> 
         <td> {{user.loantype}} </td>
         <td> {{user.emi}} </td> 
@@ -31,8 +29,8 @@
         <td> {{user.tenure}} </td>
         <td> {{user.loanStatus}} </td>
         <td> {{user.applicationStatus}} </td>
-        <td> <input type = "button" class="accept" value="Accept"> </td>
-        <td> <input type = "button" class="reject" value="Reject"> </td>
+        <td> <input type = "button" class="accept" (click)="approveLoan(user.loanId)" value="Accept"> </td>
+        <td> <input type = "button" class="reject" (click)="rejectLoan(user.loanId)" value="Reject"> </td>
       </tr>
       </table>
 </div>

@@ -94,18 +94,18 @@ export class UserService {
 
     }
 
-    // approveUser(loanId: Loan):Observable<any>
-    // {
+    approveLoan(loanId: Loan):Observable<any>
+    {
       
-    //     return this.http.post("http://localhost:8181/approveuser", loanId)
+        return this.http.post("http://localhost:8181/approveloan", loanId)
 
-    // }
+    }
 
-    // rejectUser(loanId: Loan):Observable<any>
-    // {
+    rejectLoan(loanId: Loan):Observable<any>
+    {
       
-    //     return this.http.post("http://localhost:8181/rejectuser", loanId)
+        return this.http.post("http://localhost:8181/rejectloan", loanId)
 
-    // }
+    }
 
   }
