@@ -10,6 +10,11 @@ export class AdminlogicsuccessComponent implements OnInit {
   adminName:any;
   adminId:any;
   constructor(private router:Router) { }
+  
+  redirect()
+  {
+    this.router.navigate(['logout']);
+  }
 
   ngOnInit(): void { 
     this.adminName=sessionStorage.getItem('adminName');
