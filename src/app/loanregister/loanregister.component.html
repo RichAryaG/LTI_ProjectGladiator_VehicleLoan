@@ -7,7 +7,7 @@
         <br>
         <form (ngSubmit)="registerloan()" ngNativeValidate>
                 <input type="number" name="loanAmount" placeholder="Loan Amount" [(ngModel)]="loanAmount" required/><br>
-                <select type="number" name="tenure"  (change)="selectChangeHandler($event)" [(ngModel)]="tenure" required><br>
+                <select type="number" name="tenure"  (change)="selectChangeHandler()" [(ngModel)]="tenure" required><br>
                     <option selected disabled hidden style='display: none' value='undefined'>Needed Repayment Time: </option>
                     <option value=6>6</option>
                     <option value=12>12</option>
@@ -18,12 +18,12 @@
                     <option value=72>72</option>
                     <option value=84>84</option>
                 </select><br> 
-                <input type="text" name="emi" [(ngModel)]="selectedEMI" disabled/> <br>
+                <input type="text" name="emi" placeholder = "EMI" [(ngModel)]="selectedEMI" disabled/> <br>
                 <select type="number" name="loantype"  class="loantype" [(ngModel)]="loantype" required><br>
                     <option selected disabled hidden style='display: none' value='undefined'>Select your Vehicle Type: </option>
-                    <option value=2>Two-Wheeler</option>
-                    <option value=3>Three-Wheeler</option>
-                    <option value=4>Four-Wheeler</option>
+                    <option value = 2>Two-Wheeler</option>
+                    <option value = 3>Three-Wheeler</option>
+                    <option value = 4>Four-Wheeler</option>
                 </select><br>
                 <button type="submit" class='btn login'>Submit Loan</button><br><br>
             </form>
