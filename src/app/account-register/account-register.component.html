@@ -3,7 +3,7 @@
         <br><br>
         <h1 class = "text" style = "font-size: 25px;">Welcome to New Wheels!</h1>
         <hr style = "width:70%">
-        <p class = "text" style = "color: grey; font-size: 12px;">Enter your Account Details.<p> <br>
+        <p class = "text" style = "color: grey; font-size: 12px;">Enter your Account Details.</p> <br>
             <form (ngSubmit)="registeraccount()" ngNativeValidate>           
                 <input type="text" name="accNumber" placeholder="Account Number" [(ngModel)]="accNumber" required/><br>
                 <input type="text" name="accBankName" placeholder="Bank Name" [(ngModel)]="accBankName" required/><br>
@@ -19,7 +19,7 @@
                 <input type="text" name="userEmployment" placeholder="User Employment" [(ngModel)]="userEmployment" required/><br>
                 <input type="number" name="monthlySavings" placeholder="Monthly Savings" [(ngModel)]="monthlySavings" required/><br>
 
-                <button class="btn registerAccount">Submit Account Details.</button><br><br>
+                <button class="btn register">Submit Account Details</button><br><br>
         </form>
     </div>
 </div>

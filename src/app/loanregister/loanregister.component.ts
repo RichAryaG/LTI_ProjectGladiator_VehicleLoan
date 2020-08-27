@@ -21,6 +21,7 @@ export class LoanregisterComponent implements OnInit {
   loanStatus:any;
   tenure:any;
   loantype:any;
+  selectedEMI: string = '23';
   emi=this.loanAmount/this.tenure;
 
   registerloan()
@@ -86,10 +87,10 @@ export class LoanregisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.userId=sessionStorage.getItem('userId');
-    if(this.userId==null)
-    {
-      this.router.navigate(['user']);
-    }
+    // this.userId=sessionStorage.getItem('userId');
+    // if(this.userId==null)
+    // {
+    //   this.router.navigate(['user']);
+    // }
   }
 }

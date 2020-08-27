@@ -1,13 +1,13 @@
 <div class="container">
     <div class="row">
-        <div>
-        <h1 class = "text" style = "font-size: 30px; text-align: center; font-weight: 600;">Apply for Loan</h1>
+        <br><br>
+        <h1 class = "text" style = "font-size: 25px;">Apply for Loan</h1>
         <hr style = "width:50%">
-        <p class = "text" style = "color: grey; font-size: 12px; text-align: center;">New Vehicles Loans (Product Type)</p>
+        <p class = "text" style = "color: grey; font-size: 12px; text-align: center;"> Enter Details to apply for loan.</p>
         <br>
         <form (ngSubmit)="registerloan()" ngNativeValidate>
                 <input type="number" name="loanAmount" placeholder="Loan Amount" [(ngModel)]="loanAmount" required/><br>
-                <select type="number" name="tenure"  class="tenure" [(ngModel)]="tenure" required><br>
+                <select type="number" name="tenure"  (change)="selectChangeHandler($event)" [(ngModel)]="tenure" required><br>
                     <option selected disabled hidden style='display: none' value='undefined'>Needed Repayment Time: </option>
                     <option value=6>6</option>
                     <option value=12>12</option>
@@ -17,7 +17,8 @@
                     <option value=60>60</option>
                     <option value=72>72</option>
                     <option value=84>84</option>
-                </select><br>
+                </select><br> 
+                <input type="text" name="emi" [(ngModel)]="selectedEMI" disabled/> <br>
                 <select type="number" name="loantype"  class="loantype" [(ngModel)]="loantype" required><br>
                     <option selected disabled hidden style='display: none' value='undefined'>Select your Vehicle Type: </option>
                     <option value=2>Two-Wheeler</option>
@@ -26,14 +27,6 @@
                 </select><br>
                 <button type="submit" class='btn login'>Submit Loan</button><br><br>
             </form>
-        </div>
     </div>
-
-    <div style="margin-top: 30px;"> </div>
-
-    <!-- <div>
-        <a href="#" class="login2 btn">Apply Now</a> <br> 
-        <a href="#" class="login2 btn">EMI Scheduler</a>
-    </div> -->
 
 </div>
