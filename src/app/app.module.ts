@@ -28,6 +28,7 @@ import { LoanappsuccessComponent } from './loanappsuccess/loanappsuccess.compone
 import { ViewApplicationFormComponent } from './view-application-form/view-application-form.component';
 import { EmiSchedulerComponent } from './emi-scheduler/emi-scheduler.component';
 import { CheckLoanStatusComponent } from './check-loan-status/check-loan-status.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { CheckLoanStatusComponent } from './check-loan-status/check-loan-status.
     ViewApplicationFormComponent,
     EmiSchedulerComponent,
     CheckLoanStatusComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

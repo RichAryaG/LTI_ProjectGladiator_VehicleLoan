@@ -21,6 +21,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { LoanappsuccessComponent } from './loanappsuccess/loanappsuccess.component';
 import { ViewApplicationFormComponent } from './view-application-form/view-application-form.component';
 import { CheckLoanStatusComponent } from './check-loan-status/check-loan-status.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -44,6 +45,7 @@ const routes: Routes = [
   {path: 'view-rejected', component: ViewRejectedComponent},
   {path: 'view-application-form', component: ViewApplicationFormComponent},
   {path: 'check-loan-status', component:CheckLoanStatusComponent},
+  {path: 'dashboard', component:DashboardComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
