@@ -1,1 +1,34 @@
-<p>check-loan-status works!</p>
+<div class = "container">
+    <div class="row">
+        <br><br>
+        <h1 class = "text" style = "font-size: 25px;">LOAN STATUS</h1>
+        <hr style = "width:70%">
+        <p class = "text" style = "color: grey; font-size: 15px;">Check your Loan Status<p> <br>
+    </div>
+    <table id = "table">
+        <tr>
+          <th> INDEX </th>
+          <th> LOAN ID</th>
+          <th> LOAN TYPE </th>
+          <th> EMI </th>
+          <th> INTEREST RATE (%) </th>
+          <th> LOAN AMOUNT </th>
+          <th> PROCESSING FEE </th>
+          <th> TENURE </th>
+          <th> LOAN STATUS </th>
+          <th> APPLICATION STATUS </th>
+        </tr>
+      <tr *ngFor = "let user of AppliedLoanList; let index = index;"> 
+        <td> {{index + 1}} </td>
+        <td> {{user.loanId}} </td> 
+        <td> {{user.loantype}} </td>
+        <td> {{user.emi}} </td> 
+        <td> {{user.interestRate}}% </td>
+        <td> {{user.loanAmount}} </td>
+        <td> {{user.processingFee}} </td>
+        <td> {{user.tenure}} </td>
+        <td> {{user.loanStatus}} </td>
+        <td> {{user.applicationStatus}} </td>
+      </tr>
+      </table>
+</div>
