@@ -30,15 +30,18 @@ export class LoginUserComponent {
           let userAge=user.userAge;
           let userAddress=user.userAddress;
           let userEmail=user.userEmail;
+          let userGender=user.userGender;
+          let userZip=user.userZip;
 
-          sessionStorage.setItem('userName', userName)
-          sessionStorage.setItem('userId', user.userId)
-          sessionStorage.setItem('userLast', user.userNameLast)
-          sessionStorage.setItem('userAge', user.userAge)
-          sessionStorage.setItem('userAddress', user.userAddress)
-          sessionStorage.setItem('userEmail', user.userEmail)
+          sessionStorage.setItem('userName', userName);
+          sessionStorage.setItem('userLast',userNameLast);
+          sessionStorage.setItem('userId', userId);
+          sessionStorage.setItem('userEmail', userEmail);
+          sessionStorage.setItem('userAddress', userAddress);
+          sessionStorage.setItem('userAge',userAge);
+          sessionStorage.setItem('userGender',userGender);
+          sessionStorage.setItem('userZip',userZip);
           this.router.navigate(['loginsuccess'])
-          
         }
         else
         {

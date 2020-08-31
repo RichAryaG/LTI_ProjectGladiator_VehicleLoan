@@ -1,15 +1,17 @@
   .footer {
-    left: 0;
-    bottom: 0;
+    overflow: hidden;
     width: 100%;
     font-size: small;
     background-color: #415e4c;
     font-family: Verdana, sans-serif;
-    opacity: 80%;
     color: rgb(226, 225, 225);
     text-align: center;
  }
 
+ p{
+   position: relative;
+   left: -50px;
+ }
 
 .container {
   position: relative;

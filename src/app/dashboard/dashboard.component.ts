@@ -15,6 +15,8 @@ export class DashboardComponent implements OnInit {
   userAge:String;
   userAddress:String;
   userEmail: String;
+  userGender:String;
+  userZip:String;
 
   ngOnInit(): void {
     this.userName=sessionStorage.getItem('userName');
@@ -23,10 +25,13 @@ export class DashboardComponent implements OnInit {
     this.userAge=sessionStorage.getItem('userAge');
     this.userAddress=sessionStorage.getItem('userAddress');
     this.userEmail=sessionStorage.getItem('userEmail');
+    this.userGender=sessionStorage.getItem('userGender');
+    this.userZip=sessionStorage.getItem('userZip');
+    
     if(this.userId==null)
     {
       this.router.navigate(['user']);
     }
   }
-
+  update(){}
 }

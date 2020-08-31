@@ -1,9 +1,12 @@
 <div class = "container">
-    <div style="margin-top: 40px; color: #365040;"> 
-        Hello {{userName}} {{userLast}}<br>
-        Your User ID is : {{userId}}
-        Your Age is: {{userAge}}
-        Your Address is: {{userAddress}}
-        Your Mail ID is: {{userEmail}}
+    <div style="margin-top: 10px; margin-bottom: 10px; color: #365040;"> 
+        Hello <u><b>{{userName}} {{userLast}}</b></u>!<br><br>
+        <b>Your User ID is : </b><p>{{userId}}</p><br>
+        <b>Your Age is: </b><p>{{userAge}}</p><br>
+        <b>Your Address is: </b><p>{{userAddress}}</p><br>
+        <b>Your Mail ID is: </b><p>{{userEmail}}</p><br>
+        <b>Your Gender is:</b><p>{{userGender}}</p><br>
+        <b>Youe ZipCode is:</b><p>{{userZip}}</p><br><br>
+        <button class='btn login' (click)="update()">Update Details</button>
     </div>
 </div>

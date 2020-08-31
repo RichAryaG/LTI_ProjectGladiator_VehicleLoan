@@ -12,6 +12,7 @@ export class LogicsuccessComponent implements OnInit {
   
   userName:string;
   userId:string;
+  
   public AppliedLoanList =[];
   ngOnInit(): void {
     this.userName=sessionStorage.getItem('userName');

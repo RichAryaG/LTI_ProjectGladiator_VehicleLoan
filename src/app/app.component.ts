@@ -8,31 +8,9 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'New-Wheels';
-  loginbtn=true;
-  logoutbtn=false;
 
   ngOnInit(): void {
-    
-    if(sessionStorage.length===0)
-    {
-      this.loginbtn = true;
-    }
-    else{
-      this.loginbtn = false;
-      this.logoutbtn = true;
-
-    }
   }
-  constructor(private router: Router){}
   
-  login()
-  {
-    this.router.navigate(['/login']);
-  }
-
-  logout()
-  {
-    sessionStorage.clear()
-    this.router.navigate(['/']);
-  }
+  constructor(private router: Router){}
 }

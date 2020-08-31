@@ -27,7 +27,6 @@ export class UserService {
     {
       
         return this.http.post("http://localhost:8181/register",user)
-
      
     }
 
@@ -36,7 +35,6 @@ export class UserService {
       
         return this.http.post("http://localhost:8181/loginuser",login)
 
-     
     }
 
     loginadmin(adminlogin:Login):Observable<any>
